@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<launch>
+
+
+    <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    
+
+    <!-- We resume the logic in empty_world.launch -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    
+    </include>
+
+
+ <!-- Robot model -->
+       <param name="robot_description" command="cat $(find pioneer_description)/urdf/pioneer.urdf" />
+
+<arg name="x" default="0"/>
+<arg name="y" default="0"/>
+<arg name="z" default="0"/>
+<arg name="name" default="pioneer" />
+
+<!-- Spawn the robot model -->
+<node name="my_robot_spawn" pkg="gazebo_ros" type= "spawn_model" output="screen"
+ args="-param robot_description -urdf -model $(arg name) -x $(arg x) -y $(arg y) -z $(arg z)" /> 
+
+<!-- Load controllers -->
+<rosparam command="load" file="$(find pioneer_description)/config/joints.yaml" ns="pioneer" />
+
+<!--Controllers -->
+<node name="pioneer_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/pioneer"
+    args=" --namespace=/pioneer
+          joint_state_controller
+          ruedaizq_del_velocity_controller
+          ruedader_del_velocity_controller	
+          ruedaizq_tra_velocity_controller
+          ruedader_tra_velocity_controller
+
+          --shutdown-timeout 60"/>
+
+
+<node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+    <param name="default_topic" value="/ruedaizq_del_velocity_controller/command"/>
+  </node>
+
+
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+<param name="publish_frequency" type="double" value="30.0" />
+</node>
+
+
+     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"> <param name="use_gui" value="TRUE"/>
+</node> 
+
+
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find pioneer_description)/launch/pioneer.rviz" />
+
+</launch>
+
+
+
+ 
