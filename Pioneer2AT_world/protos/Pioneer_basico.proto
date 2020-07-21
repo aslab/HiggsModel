@@ -1,0 +1,332 @@
+#VRML_SIM R2019a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Pioneer2-AT8
+# Extracted from: pioneer.urdf
+
+PROTO Pioneer2-AT8 [
+  field  SFVec3f     translation  0 0 0
+  field  SFRotation  rotation     0 1 0 0
+  field  SFString    controller   "void"
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    children [
+      Transform {
+        translation 0.000000 0.000000 0.175000
+        rotation 0.000000 1.000000 0.000000 0.000000
+        children [
+          Shape {
+            appearance DEF red PBRAppearance {
+              baseColor 0.500000 0.500000 0.500000
+              transparency 0.000000
+              roughness 1.000000
+              metalness 0
+              emissiveColor 0.000000 0.000000 0.000000
+            }
+            geometry Box {
+               size 0.45 0.35 0.24
+            }
+          }
+        ]
+      }
+      Solid {
+        translation 0.000000 0.000000 0.310000
+        rotation 0.000000 1.000000 0.000000 0.000000
+        children [
+          Shape {
+            appearance DEF black PBRAppearance {
+              baseColor 0.500000 0.500000 0.500000
+              transparency 0.000000
+              roughness 1.000000
+              metalness 0
+              emissiveColor 0.000000 0.000000 0.000000
+            }
+            geometry Box {
+               size 0.51 0.38 0.03
+            }
+          }
+        ]
+        name "cubierta_link"
+        boundingObject Box {
+           size 0.510000 0.380000 0.030000
+        }
+        physics Physics {
+          density -1
+          mass 0.100000
+          centerOfMass [ 0.000000 0.000000 0.000000 ]
+        }
+      }
+      Solid {
+        translation 0.250000 0.000000 0.270000
+        rotation 0.000000 1.000000 0.000000 0.000000
+        children [
+          Shape {
+            appearance DEF yellow PBRAppearance {
+              baseColor 0.500000 0.500000 0.500000
+              transparency 0.000000
+              roughness 1.000000
+              metalness 0
+              emissiveColor 0.000000 0.000000 0.000000
+            }
+            geometry Box {
+               size 0.05 0.05 0.05
+            }
+          }
+        ]
+        name "Sonar_delantero_link"
+        boundingObject Box {
+           size 0.050000 0.050000 0.050000
+        }
+        physics Physics {
+          density -1
+          mass 0.100000
+          centerOfMass [ 0.000000 0.000000 0.000000 ]
+        }
+      }
+      Solid {
+        translation -0.250000 0.000000 0.270000
+        rotation 0.000000 1.000000 0.000000 0.000000
+        children [
+          Shape {
+            appearance USE yellow
+            geometry Box {
+               size 0.05 0.05 0.05
+            }
+          }
+        ]
+        name "Sonar_trasero_link"
+        boundingObject Box {
+           size 0.050000 0.050000 0.050000
+        }
+        physics Physics {
+          density -1
+          mass 0.100000
+          centerOfMass [ 0.000000 0.000000 0.000000 ]
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 -1.000000 -0.000000
+          anchor 0.134000 0.212500 0.110000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "base_ruedaizqdel_joint"
+          }
+          PositionSensor {
+            name "base_ruedaizqdel_joint_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.134000 0.212500 0.110000
+          rotation -1.000000 0.000000 0.000000 1.570796
+          children [
+            Transform {
+              translation 0.000000 0.000000 0.000000
+              rotation 1.000000 0.000000 0.000000 1.570796
+              children [
+                Shape {
+                  appearance USE black
+                  geometry Cylinder {
+                    radius 0.11
+                    height 0.075
+                  }
+                }
+              ]
+            }
+          ]
+          name "Rueda_izq_delantera_link"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.000000
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Cylinder {
+                radius 0.11
+                height 0.075
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 1.400000
+            centerOfMass [ 0.000000 0.000000 0.000000 ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 -1.000000 -0.000000
+          anchor 0.134000 -0.212500 0.110000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "base_ruedaderdel_joint"
+          }
+          PositionSensor {
+            name "base_ruedaderdel_joint_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.134000 -0.212500 0.110000
+          rotation -1.000000 0.000000 0.000000 1.570796
+          children [
+            Transform {
+              translation 0.000000 0.000000 0.000000
+              rotation 1.000000 0.000000 0.000000 1.570796
+              children [
+                Shape {
+                  appearance USE black
+                  geometry Cylinder {
+                    radius 0.11
+                    height 0.075
+                  }
+                }
+              ]
+            }
+          ]
+          name "Rueda_der_delantera_link"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.000000
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Cylinder {
+                radius 0.11
+                height 0.075
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 1.400000
+            centerOfMass [ 0.000000 0.000000 0.000000 ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 -1.000000 -0.000000
+          anchor -0.134000 0.212500 0.110000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "base_ruedaizqtra_joint"
+          }
+          PositionSensor {
+            name "base_ruedaizqtra_joint_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation -0.134000 0.212500 0.110000
+          rotation -1.000000 0.000000 0.000000 1.570796
+          children [
+            Transform {
+              translation 0.000000 0.000000 0.000000
+              rotation 1.000000 0.000000 0.000000 1.570796
+              children [
+                Shape {
+                  appearance USE black
+                  geometry Cylinder {
+                    radius 0.11
+                    height 0.075
+                  }
+                }
+              ]
+            }
+          ]
+          name "Rueda_izq_trasera_link"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.000000
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Cylinder {
+                radius 0.11
+                height 0.075
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 1.400000
+            centerOfMass [ 0.000000 0.000000 0.000000 ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 -1.000000 -0.000000
+          anchor -0.134000 -0.212500 0.110000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "base_ruedadertra_joint"
+          }
+          PositionSensor {
+            name "base_ruedadertra_joint_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation -0.134000 -0.212500 0.110000
+          rotation -1.000000 0.000000 0.000000 1.570796
+          children [
+            Transform {
+              translation 0.000000 0.000000 0.000000
+              rotation 1.000000 0.000000 0.000000 1.570796
+              children [
+                Shape {
+                  appearance USE black
+                  geometry Cylinder {
+                    radius 0.11
+                    height 0.075
+                  }
+                }
+              ]
+            }
+          ]
+          name "Rueda_der_trasera_link"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.000000
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Cylinder {
+                radius 0.11
+                height 0.075
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 1.400000
+            centerOfMass [ 0.000000 0.000000 0.000000 ]
+          }
+        }
+      }
+    ]
+    name "base_link"
+    boundingObject Transform {
+      translation 0.000000 0.000000 0.175000
+      rotation 0.000000 1.000000 0.000000 0.000000
+      children [
+        Box {
+           size 0.450000 0.350000 0.240000
+        }
+      ]
+    }
+    physics Physics {
+      density -1
+      mass 17.000000
+      centerOfMass [ 0.000000 0.000000 0.000000 ]
+    }
+  }
+}
