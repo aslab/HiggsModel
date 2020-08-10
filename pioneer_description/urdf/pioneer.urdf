@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<robot name="Pioneer_2-AT_8">
+
+<!--Se define el color de los materiales utilizados.-->
+
+  <material name="red">
+    <color rgba="0.851 0.0 0.0 1.0"/>
+  </material>
+  <material name="black">
+    <color rgba="0.038 0.038 0.038 1.0"/>
+  </material>
+  <material name="yellow">
+    <color rgba="0.715 0.583 0.210 1.0"/>
+  </material>
+
+
+<!--Comenzamos definiendo cada una de las partes que componen el Pioneer y sus correspondientes uniones(joint)-->
+
+<!-- Chasis -->
+
+<link name="base_link">
+
+    <visual>
+      <geometry>
+        <box size="0.45 0.35 0.24"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.175"/>
+      <material name="red"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.45 0.35 0.24"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.175"/>
+    </collision> 
+
+    <inertial>
+      <mass value="17"/>
+      <!-- 14kg con una bateria mas otras 2 de 1,5kg cada una = 17kg-->
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+      <!--origin xyz=" -0.1 0 0.177"/>-->
+    </inertial>
+    
+ </link>
+
+
+<!-- Cubierta superior -->
+
+<link name="cubierta_link">
+
+    <visual>
+      <geometry>
+        <box size="0.51 0.38 0.03"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </geometry>
+      
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.51 0.38 0.03"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </geometry>
+      
+    </collision> 
+
+    <inertial>
+      <mass value="0.1"/>
+      <!--Tomo un valor aproximado(Puede considerarse simbolico)-->
+      <!--origin xyz="-0.025 0 -0.223"/>-->
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      <!--Matriz de inercias = 1 debido a su bajo efecto-->
+    </inertial>
+    
+ </link>
+
+<joint name="base_cubierta" type="fixed">
+    <origin  xyz="0 0 0.31" rpy="0 0 0" />
+    <parent link="base_link"/>
+    <child link="cubierta_link"/>
+  </joint>
+
+
+<!--Sonar sensor: --> 
+
+<link name="Sonar_delantero_link">
+
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="yellow"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision> 
+
+    <inertial>
+      <mass value="0.1"/>
+      <!--Tomo un valor aproximado(Puede considerarse simbolico)-->
+      <!--<origin xyz="-0.025 0 -0.223"/>-->
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      <!--Matriz de inercias = 1 debido a su bajo efecto-->
+    </inertial>
+
+</link>
+
+
+<link name="Sonar_trasero_link">
+
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="yellow"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision> 
+
+    <inertial>
+      <mass value="0.1"/>
+      <!--Tomo un valor aproximado(Puede considerarse simbolico)-->
+      <!--<origin xyz="-0.025 0 -0.223"/>-->
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      <!--Matriz de inercias = 1 debido a su bajo efecto-->
+    </inertial>
+
+</link>
+
+<joint name="base_sonar_frontal_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.25 0 0.27"/>
+    <parent link="base_link"/>
+    <child link="Sonar_delantero_link"/>
+  </joint>
+
+<joint name="base_sonar_trasero_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.25 0 0.27"/>
+    <parent link="base_link"/>
+    <child link="Sonar_trasero_link"/>
+  </joint>
+
+
+<!--Ruedas--> 
+
+<link name="Rueda_izq_delantera_link">
+      <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+         <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.4"/>
+      <!--<origin xyz="0 0 0"/>-->
+      <inertia ixx="0.012411765597" ixy="0" ixz="0" iyy="0.015218160428" iyz="0" izz="0.011763977943"/>
+    </inertial>
+
+  </link>
+
+<joint name="base_ruedaizqdel_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <!--<limit effort="80" velocity="0.268"/>-->
+    <joint_properties damping="0.7"/>
+    <origin rpy="-1.57079635 0 0" xyz="0.134 0.2125 0.11"/>
+    <parent link="base_link"/>
+    <child link="Rueda_izq_delantera_link"/>
+  </joint>
+
+<gazebo reference="Rueda_izq_delantera_link">
+      <mu1 value="200.0"/>
+      <mu2 value="100.0"/>
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+<transmission name="rueda_izq_delantera">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="rueda_izq_del_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_ruedaizqdel_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+
+<link name="Rueda_der_delantera_link">
+      <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.4"/>
+      <!--<origin xyz="0 0 0"/>-->
+      <inertia ixx="0.012411765597" ixy="0" ixz="0" iyy="0.015218160428" iyz="0" izz="0.011763977943"/>
+    </inertial>
+
+  </link>
+
+<joint name="base_ruedaderdel_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <!--<limit effort="80" velocity="0.268"/>-->
+    <joint_properties damping="0.7"/>
+    <origin rpy="-1.57079635 0 0" xyz="0.134 -0.2125 0.11"/>
+    <parent link="base_link"/>
+    <child link="Rueda_der_delantera_link"/>
+  </joint>
+
+<gazebo reference="Rueda_der_delantera_link">
+      <mu1 value="200.0"/>
+      <mu2 value="100.0"/>
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+<transmission name="rueda_der_delantera">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="rueda_der_del_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_ruedaderdel_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+<link name="Rueda_izq_trasera_link">
+      <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.4"/>
+      <!--<origin xyz="0 0 0"/>-->
+      <inertia ixx="0.012411765597" ixy="0" ixz="0" iyy="0.015218160428" iyz="0" izz="0.011763977943"/>
+    </inertial>
+
+  </link>
+
+<joint name="base_ruedaizqtra_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <!--<limit effort="80" velocity="0.268"/>-->
+    <joint_properties damping="0.7"/>
+    <origin rpy="-1.57079635 0 0" xyz="-0.134 0.2125 0.11"/>
+    <parent link="base_link"/>
+    <child link="Rueda_izq_trasera_link"/>
+  </joint>
+
+<gazebo reference="Rueda_izq_trasera_link">
+      <mu1 value="200.0"/>
+      <mu2 value="100.0"/>
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+<transmission name="rueda_izq_trasera">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="rueda_izq_tras_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_ruedaizqtra_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+<link name="Rueda_der_trasera_link">
+      <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.11"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.4"/>
+      <!--<origin xyz="0 0 0"/>-->
+      <inertia ixx="0.012411765597" ixy="0" ixz="0" iyy="0.015218160428" iyz="0" izz="0.011763977943"/>
+    </inertial>
+
+  </link>
+
+<joint name="base_ruedadertra_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <!--<limit effort="80" velocity="0.268"/>-->
+    <joint_properties damping="0.7"/>
+    <origin rpy="-1.57079635 0 0" xyz="-0.134 -0.2125 0.11"/>
+    <parent link="base_link"/>
+    <child link="Rueda_der_trasera_link"/>
+  </joint>
+
+<gazebo reference="Rueda_der_trasera_link">
+      <mu1 value="200.0"/>
+      <mu2 value="100.0"/>
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+<transmission name="rueda_der_trasera">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="rueda_der_tra_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_ruedadertra_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <!-- Gazebo plugin for ROS Control -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+<gazebo reference="base_link">
+      <material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="cubierta_link">
+      <material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="Sonar_delantero_link">
+      <material>Gazebo/Yellow</material>
+</gazebo>
+
+<gazebo reference="Sonar_trasero_link">
+      <material>Gazebo/Yellow</material>
+</gazebo>
+
+</robot>
+
+ 
