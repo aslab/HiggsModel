@@ -1,5 +1,5 @@
 # HiggsModel
-A (simulation) model for the Higgs robot
+A multiperspective model of the Higgs robot.
 
 Model-driven Engineering is an engineering method that uses models as central assets for system development. System models have always been a central resource for engineers (e.g. to do simulations) but the scope and applications of models are continuously increasing.
 
