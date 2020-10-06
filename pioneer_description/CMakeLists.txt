@@ -224,6 +224,8 @@ include_directories(
 add_executable(parser src/parser.cpp)
  target_link_libraries(parser ${catkin_LIBRARIES})
 
+
+
 include_directories(include ${catkin_INCLUDE_DIRS})
 add_executable(state_publisher src/state_publisher.cpp)
 target_link_libraries(state_publisher ${catkin_LIBRARIES})

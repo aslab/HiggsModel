@@ -1,0 +1,297 @@
+function sysCall_init()
+    -- do some initialization here
+        -- create the console to print some debug infomation
+    console_debug=sim.auxiliaryConsoleOpen('debug info',100000,1)
+
+    -- Check the required RosInterface first
+    moduleName=0
+    index=0
+    rosInterfacePresent=false
+    while moduleName do
+        moduleName=sim.getModuleName(index)
+        if (moduleName=='ROSInterface') then
+            rosInterfacePresent=true
+        end
+        index=index+1
+    end
+    if rosInterfacePresent then   
+    sim.auxiliaryConsolePrint(console_debug,'rosinterface loaded ')
+        --sub_velocity = simROS.subscribe('/vrep/cmd_vel','geometry_msgs/Twist','velocity_callback')
+        sub_laser   = simROS.subscribe('/vrep/laser_switch','std_msgs/Bool','laserSwitch_callback')
+        pub_laser   = simROS.advertise('/vrep/scan','sensor_msgs/LaserScan') 
+        pub_poseStamped   = simROS.advertise('/vrep/pose','geometry_msgs/PoseStamped')
+    else
+        sim.auxiliaryConsolePrint(console_debug,'rosinterface has not been loaded -- pause...')
+        sim.pauseSimulation()
+    end
+    
+    --Pioneer componentes
+    robot=sim.getObjectAssociatedWithScript(sim.handle_self)
+    left_frontMotor=sim.getObjectHandle("base_ruedaizqdel_joint") -- Handle of the left motors
+    left_backMotor=sim.getObjectHandle("base_ruedaizqtra_joint") 
+    right_frontMotor=sim.getObjectHandle("base_ruedaderdel_joint") -- Handle of the right motors
+    right_backMotor=sim.getObjectHandle("base_ruedadertra_joint") 
+        -- laser
+    IS_LASER_ENABLE = true
+    laser_cnt = 0
+    laserscanHandle = sim.getObjectHandle("LaserScanner_2D")
+    laserHandle=sim.getObjectHandle("laser_link")
+    jointHandle=sim.getObjectHandle("LaserScannerJoint_2D")
+    graphHandle=sim.getObjectHandle("LaserScannerGraph_2D")
+    objName=sim.getObjectName(laserscanHandle)
+    communicationTube=sim.tubeOpen(0,objName..'_2D_SCANNER_DATA',1)
+    scanningAngle= 180
+    scanningDensity= 5
+    laser_seq = 0
+    
+    --Trayectorias y control
+    odometry=sim.getObjectHandle('Odometria')
+    position=sim.getObjectPosition(odometry,-1)
+    orientation=sim.getObjectOrientation(odometry,-1)
+    pose={position[1],position[2],orientation[3]}
+    robot_pose=sim.getObjectHandle('robot_pose')
+    math.randomseed(os.time())
+    path=sim.getObjectHandle('Path')
+    ref_point=sim.getObjectHandle('ref_point')
+    --Parametros de control
+    wheel_radius=0.11
+    b=0.285
+    e=0.24
+    k=1.75
+    --pos = sim.getObjectPosition(ref_point,-1)
+    --pos[3] = 1.7723e-01
+    --sim.setObjectPosition(robot,sim.handle_parent, pos)
+
+    -- get transform
+    local tl = sim.getObjectPosition(laserHandle,sim.handle_parent)
+
+    laser2robot= {
+        header={
+            seq=0,
+            stamp=0.0,
+            frame_id="base_link"
+        },
+        child_frame_id="laser_link",
+        transform={
+            translation = {x=tl[1],y=tl[2],z=tl[3]},
+            rotation= {x=0,y=0, z=0,w=1}
+        }
+    }
+    
+tf_seq = 0;
+
+    pos = sim.getObjectPosition(robot,sim.handle_parent)
+    ori = __getObjectOrientation__(robot, sim.handle_parent)
+    --pos[1] = 0.0
+    --pos[2] = 0.0
+    -- ori[3] = ori[3] + 1.57
+    --sim.setObjectPosition(robot,sim.handle_parent, pos)
+    --__setObjectOrientation__(robot, sim.handle_parent, ori)
+
+
+    
+end
+
+function sysCall_actuation()
+    -- put your actuation code here
+    local wL,wR
+    local ptraj,vtraj,poff
+    ptraj,vtraj=getTrajectoryPoint()
+    poff,voff=getOffCenterPoint(ptraj,vtraj,e)
+    wL,wR=kinematicControl(poff,voff,pose,k)
+    print("wR: " .. wR)
+    if(wL > 740) then
+    wL = 740
+    end
+    if(wR > 740) then
+    wR = 740
+    end
+    sim.setJointTargetVelocity(left_backMotor,wL/2)
+    sim.setJointTargetVelocity(right_backMotor,wR/2)
+    sim.setJointTargetVelocity(right_frontMotor,wR/2)
+    sim.setJointTargetVelocity(left_frontMotor,wL/2)
+end
+
+function sysCall_sensing()
+    -- put your sensing code here
+    pose=updateRobotPose()
+    local PosStamped2ros={ }
+       PosStamped2ros['header']={seq=0, stamp=simROS.getTime(), frame_id="base_link"}
+       PosStamped2ros['pose']= {}
+        pose['x'] = pose[1]
+        pose['y'] = pose[2]
+        pose['z'] = pose[3] 
+    
+    
+    simROS.publish(pub_poseStamped,PosStamped2ros) 
+    
+        -- get laserscan
+    -- 
+    if IS_LASER_ENABLE and laser_cnt >= 4 then
+        laser_cnt = 0
+        sim.resetGraph(graphHandle)
+        pts=scanningAngle*scanningDensity+1
+        p=-scanningAngle*math.pi/360
+        stepSize=math.pi/(scanningDensity*180)
+        ranges={}
+        modelInverseMatrix=simGetInvertedMatrix(sim.getObjectMatrix(laserscanHandle,-1))
+        
+        -- generate data
+        for i=0,pts,1 do
+            sim.setJointPosition(jointHandle,p)
+            p=p+stepSize
+            r,dist,pt,m,n =sim.handleProximitySensor(laserHandle) -- pt is RELATIVE to te rotating laser beam!
+            if r>0 then
+                table.insert(ranges, dist)
+            end
+            sim.handleGraph(graphHandle,0.0)
+        end
+        -- Now send the data:
+        if #ranges>0 then
+            local scan={}
+            scan['header']={seq=laser_seq, stamp=simROS.getTime(), frame_id="laser_link"}
+            scan['angle_min']=0
+            scan['angle_max']=scanningAngle*math.pi/180
+            scan['angle_increment']=-1*stepSize
+            scan['time_increment']=0
+            scan['scan_time']= 0
+            scan['range_min'] = 0
+            scan['range_max'] = 50
+            scan['ranges']= ranges
+            scan['intensities']= {}
+            simROS.publish(pub_laser,scan)  
+            laser_seq = laser_seq + 1
+        end
+    end
+    laser_cnt = laser_cnt + 1
+    --
+    -- transform
+    -- 
+    laser2robot['header']['stamp']=simROS.getTime()
+    laser2robot['header']['seq'] = tf_seq
+    simROS.sendTransform(laser2robot)
+
+    
+    tf_seq = tf_seq + 1;
+    
+    
+end
+
+function sysCall_cleanup()
+    -- do some clean-up here
+        if rosInterfacePresent then
+        simROS.shutdownSubscriber(sub_laser)
+
+        --simROS.shutdownSubscriber(sub_velocity)
+
+        simROS.shutdownPublisher(pub_laser)
+    end
+end
+
+function getTrajectoryPoint()
+    local position,orientation
+    local linear_vel,angular_vel
+    local ptraj,vtraj
+    position=sim.getObjectPosition(ref_point,-1)
+    orientation=sim.getObjectOrientation(ref_point,-1)
+    linear_vel,angular_vel=sim.getObjectVelocity(ref_point)
+    
+    if (orientation[3]>0) then
+        ptraj={position[1],position[2],orientation[2]-math.pi/2}
+    else
+        ptraj={position[1],position[2],math.pi/2-orientation[2]}
+    end
+    
+    --print("ox: " .. orientation[1] .. " oy: " .. orientation[2] .. " oz: " .. orientation[3])
+    
+    vtraj={linear_vel[1],linear_vel[2],angular_vel[3]}
+    
+    return ptraj,vtraj
+end
+
+function getOffCenterPoint(ptraj,vtraj,e)
+    local xc,yc,vxc,vyc
+    xc=ptraj[1]+e*math.cos(ptraj[3])
+    yc=ptraj[2]+e*math.sin(ptraj[3])
+--Derivada de la posicion
+    vxc=vtraj[1]-e*vtraj[3]*math.sin(ptraj[3])
+    vyc=vtraj[2]+e*vtraj[3]*math.cos(ptraj[3])
+    return {xc,yc},{vxc,vyc}
+end
+
+function kinematicControl(ptraj,vtraj,pose,k)
+    local vxc,vyc,vL,vR,ex,ey
+    ex=ptraj[1]-(pose[1]+e*math.cos(pose[3]))
+    ey=ptraj[2]-(pose[2]+e*math.sin(pose[3]))
+    print("e: " .. math.sqrt(ex*ex+ey*ey))
+    vxc=vtraj[1]+k*ex
+    vyc=vtraj[2]+k*ey
+    wL=(1/(e*wheel_radius))*((e*math.cos(pose[3])+b*math.sin(pose[3]))*vxc+(e*math.sin(pose[3])-b*math.cos(pose[3]))*vyc)
+    wR=(1/(e*wheel_radius))*((e*math.cos(pose[3])-b*math.sin(pose[3]))*vxc+(e*math.sin(pose[3])+b*math.cos(pose[3]))*vyc)
+    return wL,wR
+end
+
+function updateRobotPose()
+    local pose
+    position=sim.getObjectPosition(robot_pose,-1)
+    orientation=sim.getObjectOrientation(robot_pose,-1)
+    pose={position[1],position[2],orientation[3]}
+    return pose
+end
+
+function getOdometry(alpha1,alpha2)
+    local result,wL,wR,SL,SR,theta,S,delta_rot,delta_trans,delta_time
+    result,wL=sim.getObjectFloatParameter(left_backMotor,sim.jointfloatparam_velocity)
+    result,wR=sim.getObjectFloatParameter(right_backMotor,sim.jointfloatparam_velocity)
+    delta_time=sim.getSimulationTimeStep()
+    SL=wL*delta_time*wheel_radius
+    SR=wR*delta_time*wheel_radius
+    
+    --Ruidos para simular de forma realista. Alpha1 y alpha2
+    theta=alpha1*(SR-SL)/(2*b) --Rotacion angular
+    S=alpha2*(SR+SL)/2         -- Traslacion lineal
+    if not drift then    --Deslizamiento
+        drift=0.5*(math.random()-0.5)
+    end
+    
+    delta_rot=theta*(math.random()-0.5+drift)  -- en rad
+    delta_trans=S*math.random() -- en metros
+    SL=SL+(delta_trans-b*delta_rot)
+    SR=SR+(delta_trans+b*delta_rot)
+    return SL,SR
+end
+
+function updateOdometry(pose)
+    local SL,SR,vL,vR,v,w,delta_time
+    SL,SR=getOdometry(0.25,0.15)
+    inc_S=(SL+SR)/2
+    inc_theta=(SR-SL)/(2*b)
+    pose[1]=pose[1]+inc_S*math.cos(pose[3])
+    pose[2]=pose[2]+inc_S*math.sin(pose[3])
+    pose[3]=pose[3]+inc_theta
+    sim.setObjectPosition(odometry,-1,{pose[1],pose[2],0})
+    sim.setObjectOrientation(odometry,-1,{0,0,pose[3]})
+    return pose
+end
+
+function __setObjectOrientation__(a,b,c)
+    -- compatibility routine, wrong results could be returned in some situations, in CoppeliaSim <4.0.1
+    if b==sim.handle_parent then
+        b=sim.getObjectParent(a)
+    end
+    if (b~=-1) and (sim.getObjectType(b)==sim.object_joint_type) and (sim.getInt32Parameter(sim.intparam_program_version)>=40001) then
+        a=a+sim.handleflag_reljointbaseframe
+    end
+    return sim.setObjectOrientation(a,b,c)
+end
+function __getObjectOrientation__(a,b)
+    -- compatibility routine, wrong results could be returned in some situations, in CoppeliaSim <4.0.1
+    if b==sim.handle_parent then
+        b=sim.getObjectParent(a)
+    end
+    if (b~=-1) and (sim.getObjectType(b)==sim.object_joint_type) and (sim.getInt32Parameter(sim.intparam_program_version)>=40001) then
+        a=a+sim.handleflag_reljointbaseframe
+    end
+    return sim.getObjectOrientation(a,b)
+end
+

@@ -1,0 +1,34 @@
+
+<launch>
+
+
+
+
+
+
+  <rosparam command="load"
+            file="$(find pioneer_description)/config/joints.yaml"
+            ns="pioneer_joint_state_controller" />
+
+ <rosparam command="load"
+            file="$(find pioneer_description)/config/diffdrive.yaml"
+            ns="pioneer_diff_drive_controller" />
+
+  <node name="pioneer_controller_spawner" pkg="controller_manager" type="spawner"
+    args="pioneer_joint_state_controller
+          pioneer_diff_drive_controller
+          --shutdown-timeout 3"/>
+
+  <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+    <param name="default_topic" value="/pioneer_diff_drive_controller/cmd_vel"/>
+  </node>
+
+     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"> <param name="use_gui" value="TRUE"/>
+</node> 
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+<param name="publish_frequency" type="double" value="30.0" />
+</node>
+</launch>
+
+

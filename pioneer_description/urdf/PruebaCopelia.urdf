@@ -24,7 +24,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/chasis.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/chasis.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.177"/>
       <material name="red"/>
@@ -32,7 +32,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/chasis.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/chasis.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.177"/>
     </collision> 
@@ -53,7 +53,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/cubierta.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/cubierta.stl"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
       </geometry>
       
@@ -62,7 +62,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/cubierta.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/cubierta.stl"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
       </geometry>
       
@@ -126,7 +126,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/sonar_delantero.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/sonar_delantero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow"/>
@@ -134,7 +134,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/sonar_delantero.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/sonar_delantero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision> 
@@ -154,7 +154,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/sonar_trasero.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/sonar_trasero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow"/>
@@ -162,7 +162,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/sonar_trasero.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/sonar_trasero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision> 
@@ -195,7 +195,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+         <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -203,7 +203,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -226,7 +226,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="package://pioneer_description/meshes/rueda.stl"/>
+         <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -269,7 +269,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="base_ruedaizqdel_joint">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission>
 
@@ -277,7 +277,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+         <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -285,7 +285,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -307,7 +307,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/rueda.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -350,7 +350,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="base_ruedaderdel_joint">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission>
 
@@ -358,7 +358,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+         <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -366,7 +366,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -388,7 +388,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/rueda.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -431,7 +431,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="base_ruedaizqtra_joint">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission>
 
@@ -440,7 +440,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+         <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -448,7 +448,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/eje.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -470,7 +470,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pioneer_description/meshes/rueda.stl"/>
+        <mesh filename="/home/victorguti/catkin_ws/src/pioneer_description/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -513,7 +513,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="base_ruedadertra_joint">
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission>
 
@@ -521,7 +521,6 @@
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/</robotNamespace>
-      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
   </gazebo>
 
