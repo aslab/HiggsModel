@@ -1,6 +1,0 @@
-gazebo_ros_control: 
- pid_gains:
-  base_ruedaizqdel_joint: {p: 10, i: 1, d: 1}
-  base_ruedaderdel_joint: {p: 10, i: 1, d: 1}
-  base_ruedaizqtra_joint: {p: 10, i: 1, d: 1}
-  base_ruedadertra_joint: {p: 10, i: 1, d: 1}
