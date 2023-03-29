@@ -1,0 +1,2 @@
+Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12

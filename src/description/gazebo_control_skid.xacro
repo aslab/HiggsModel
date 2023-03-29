@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Pioneer_2-AT_8">
+  
+  <gazebo>
+        <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+            <ros>
+            <namespace>/</namespace>
+            <remapping>cmd_vel:=cmd_vel</remapping>
+            <remapping>odom:=odom</remapping>
+            </ros>
+
+            <!-- Number of wheel pairs -->
+            <num_wheel_pairs>2</num_wheel_pairs>
+
+            <!-- wheels0 -->
+            <left_joint>base_ruedaizqdel_joint</left_joint>
+            <right_joint>base_ruedaderdel_joint</right_joint>
+
+            <!-- wheels1-->
+            <left_joint>base_ruedaizqtra_joint</left_joint>
+            <right_joint>base_ruedadertra_joint</right_joint>
+
+            <!-- kinematics -->
+            <wheel_separation>0.415</wheel_separation>
+            <wheel_separation>0.415</wheel_separation>
+
+            <wheel_diameter>0.1</wheel_diameter>
+            <wheel_diameter>0.1</wheel_diameter>
+
+            <!-- limits -->
+            <max_wheel_torque>200</max_wheel_torque>
+            <max_wheel_acceleration>10.0</max_wheel_acceleration>
+
+            <!-- output -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link0</robot_base_frame>
+        </plugin>
+    </gazebo>
+
+</robot>

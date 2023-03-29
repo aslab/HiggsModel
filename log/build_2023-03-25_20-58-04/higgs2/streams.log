@@ -1,0 +1,58 @@
+[0.014s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.048s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.245s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.327s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.345s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.345s] -- Configured cppcheck include dirs: 
+[0.345s] -- Configured cppcheck exclude dirs and/or files: 
+[0.351s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.352s] -- Configured cpplint exclude dirs and/or files: 
+[0.353s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.354s] -- Added test 'lint_cmake' to check CMake code style
+[0.355s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.361s] -- Added test 'uncrustify' to check C / C++ code style
+[0.361s] -- Configured uncrustify additional arguments: 
+[0.362s] -- Added test 'xmllint' to check XML markup files
+[0.362s] -- Configuring done
+[0.365s] -- Generating done
+[0.365s] -- Build files have been written to: /home/alvaro/rosej/higgs2/build/higgs2
+[0.397s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.433s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
+[0.439s] -- Install configuration: ""
+[0.439s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config
+[0.439s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src
+[0.439s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control.xacro
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/lidar.xacro
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/inertial_macros.xacro
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot.urdf.xacro
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot_core.xacro
+[0.440s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.stl
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.stl
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.stl
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/hokuyo.dae
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.stl
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.stl
+[0.441s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.stl
+[0.442s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch
+[0.442s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rsp.launch.py
+[0.442s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds
+[0.442s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/prueba.world
+[0.442s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/scenario1.world
+[0.442s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/package_run_dependencies/higgs2
+[0.443s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/parent_prefix_path/higgs2
+[0.443s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.sh
+[0.443s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.dsv
+[0.443s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.sh
+[0.443s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.dsv
+[0.443s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.bash
+[0.443s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.sh
+[0.444s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.zsh
+[0.444s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.dsv
+[0.444s] -- Installing: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.dsv
+[0.444s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/packages/higgs2
+[0.444s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config.cmake
+[0.444s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config-version.cmake
+[0.444s] -- Up-to-date: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.xml
+[0.445s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
