@@ -1,0 +1,17 @@
+--Launch gazebo with papeleras.world
+
+ros2 launch higgs2 launch_sim.launch.py world:=./worlds/laberinto.world 
+
+--Launch teleop keyboard
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+--Launch slam_toolbox for map
+
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+
+--Launch nav2
+
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+
+
