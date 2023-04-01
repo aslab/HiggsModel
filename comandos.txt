@@ -1,0 +1,39 @@
+/////      BASICS
+
+--Launch gazebo with papeleras.world
+
+ros2 launch higgs2 launch_sim.launch.py world:=./worlds/laberinto.world 
+
+--Launch rviz2 (might be on the above)
+
+ros2 run rviz2 rviz2 -d config/view_bot.rviz --ros-args -p use_sim_time:=true
+
+/////       SLAM AND NAV2
+
+--Launch slam_toolbox for map
+
+ros2 launch higgs2 online_async_launch.py params_file:=./config/mapper_params_online_async.yaml use_sim_time:=true
+
+--Launch nav2 normal
+
+ros2 launch higgs2  navigation_launch.py use_sim_time:=true
+
+--Launch nav2 LOCALIZATION
+
+ros2 launch higgs2 localization_launch.py map:=./config/maps/laberinto_map_save.yaml  use_sim_time:=true
+
+--Launch nav2 NAVIGATION
+
+ros2 launch higgs2  navigation_launch.py use_sim_time:=true map_subscribe_transient_local:=true
+
+/////        HELP
+
+--Kill gazebo
+
+alias killgazebo="killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient"
+
+--Launch teleop keyboard
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+

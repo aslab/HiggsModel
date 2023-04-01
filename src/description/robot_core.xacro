@@ -408,7 +408,7 @@
   </joint>
 
 <gazebo reference="Rueda_izq_trasera_link">
-      <mu1 value="200.0"/>   
+      <mu1 value="200.0"/>   <!--200.0 y 100.0-->
       <mu2 value="100.0"/>   
 
       <kp value="10000000.0" />
@@ -491,7 +491,7 @@
   </joint>
 
 <gazebo reference="Rueda_der_trasera_link">
-      <mu1 value="200.0"/>   
+      <mu1 value="200.0"/>   <!--200.0 y 100.0-->
       <mu2 value="100.0"/> 
       
       <kp value="10000000.0" />

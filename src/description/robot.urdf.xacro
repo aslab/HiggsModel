@@ -1,14 +1,23 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="Pioneer_2-AT_8" >
 
+    <!-- To change the control between ros2 or skid, change the next true or false and change
+        on launch_sim.lauch.py on line 28 -->
+
+    <xacro:arg name="use_ros2_control" default="false"/> 
     <xacro:arg name="sim_mode" default="true"/>
 
     <xacro:include filename="robot_core.xacro" />
-    <!--<xacro:include filename="gazebo_control.xacro" />-->
-    <!--<xacro:include filename="gazebo_control_skid.xacro" />-->
-    <!--<xacro:include filename="ros2_control.xacro" />-->
-    <xacro:include filename="gazebo_control_skid.xacro" />
+
+    <xacro:if value="$(arg use_ros2_control)">
+        <xacro:include filename="ros2_control.xacro" />
+    </xacro:if>
+    <xacro:unless value="$(arg use_ros2_control)">
+        <xacro:include filename="gazebo_control_skid.xacro" />
+    </xacro:unless>
     <xacro:include filename="lidar.xacro" />
+    
+    
 
     
 </robot>
