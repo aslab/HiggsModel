@@ -25,7 +25,7 @@ def generate_launch_description():
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                     #<--- CHANGE CONTROL MODE BETWEEN ROS2 OR SKID use_ros2_control
-                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
     )
 
     joystick = IncludeLaunchDescription(
@@ -74,6 +74,19 @@ def generate_launch_description():
         executable="spawner",
         arguments=["joint_broad"],
     )
+
+#    relay_odom = Node(
+#     name="relay_odom",
+#     package="topic_tools",
+#     executable="relay",
+#     parameters=[
+#         {
+#             "input_topic": "/diff_cont/odom",
+#             "output_topic": "/odom",
+#         }
+#     ],
+#     output="screen",
+#     )
     
     
 
@@ -85,7 +98,8 @@ def generate_launch_description():
         twist_mux,
         gazebo,
         spawn_entity,
-        #diff_drive_spawner,
-        #joint_broad_spawner
-        rviz2,
+        #relay_odom,
+        diff_drive_spawner,
+        joint_broad_spawner,
+        rviz2
     ])

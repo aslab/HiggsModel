@@ -33,6 +33,7 @@
     </joint>
 
 <link name="base_footprint">
+
 </link>
 
 
@@ -224,7 +225,7 @@
     <collision>
       <origin rpy="-1.57079635 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.075" radius="0.111"/>
+        <sphere radius="0.111"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
     </collision>
 
@@ -246,14 +247,14 @@
   </joint>
 
 <gazebo reference="Rueda_izq_delantera_link">
-      <mu1 value="200.0"/>
+      <!-- <mu1 value="200.0"/>
       <mu2 value="100.0"/>
       <kp value="10000000.0" />
-      <kd value="1.0" />
+      <kd value="1.0" /> -->
       <material>Gazebo/Grey</material>
     </gazebo>
 
-<transmission name="rueda_izq_delantera">
+<!-- <transmission name="rueda_izq_delantera">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="rueda_izq_del_motor">
       <mechanicalReduction>1</mechanicalReduction>
@@ -261,7 +262,7 @@
     <joint name="base_ruedaizqdel_joint">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
-  </transmission>
+  </transmission> -->
 
 <link name="Eje_der_delantero_link">
       <visual>
@@ -305,7 +306,7 @@
     <collision>
       <origin rpy="-1.57079635 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.075" radius="0.111"/>
+        <sphere radius="0.111"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
     </collision>
 
@@ -327,14 +328,14 @@
   </joint>
 
 <gazebo reference="Rueda_der_delantera_link">
-      <mu1 value="200.0"/>
+      <!-- <mu1 value="200.0"/>
       <mu2 value="100.0"/>
       <kp value="10000000.0" />
-      <kd value="1.0" />
+      <kd value="1.0" /> -->
       <material>Gazebo/Grey</material>
     </gazebo>
 
-<transmission name="rueda_der_delantera">
+<!-- <transmission name="rueda_der_delantera">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="rueda_der_del_motor">
       <mechanicalReduction>1</mechanicalReduction>
@@ -342,7 +343,7 @@
     <joint name="base_ruedaderdel_joint">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
-  </transmission>
+  </transmission> -->
 
 <link name="Eje_izq_trasero_link">
       <visual>
@@ -386,7 +387,7 @@
     <collision>
       <origin rpy="-1.57079635 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.075" radius="0.111"/>
+        <sphere radius="0.111"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
     </collision>
 
@@ -408,15 +409,14 @@
   </joint>
 
 <gazebo reference="Rueda_izq_trasera_link">
-      <mu1 value="200.0"/>   <!--200.0 y 100.0-->
+      <!-- <mu1 value="200.0"/>  
       <mu2 value="100.0"/>   
-
       <kp value="10000000.0" />
-      <kd value="1.0" />
+      <kd value="1.0" /> -->
       <material>Gazebo/Grey</material>
     </gazebo>
 
-<transmission name="rueda_izq_trasera">
+<!-- <transmission name="rueda_izq_trasera">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="rueda_izq_tra_motor">
       <mechanicalReduction>1</mechanicalReduction>
@@ -424,7 +424,7 @@
     <joint name="base_ruedaizqtra_joint">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
-  </transmission>
+  </transmission> -->
 
 
 <link name="Eje_der_trasero_link">
@@ -469,7 +469,7 @@
     <collision>
       <origin rpy="-1.57079635 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.075" radius="0.111"/>
+        <sphere radius="0.111"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
     </collision>
 
@@ -491,15 +491,14 @@
   </joint>
 
 <gazebo reference="Rueda_der_trasera_link">
-      <mu1 value="200.0"/>   <!--200.0 y 100.0-->
+      <!-- <mu1 value="200.0"/>  
       <mu2 value="100.0"/> 
-      
       <kp value="10000000.0" />
-      <kd value="1.0" />
+      <kd value="1.0" /> -->
       <material>Gazebo/Grey</material>
     </gazebo>
 
-<transmission name="rueda_der_trasera">
+<!-- <transmission name="rueda_der_trasera">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="rueda_der_tra_motor">
       <mechanicalReduction>1</mechanicalReduction>
@@ -507,16 +506,7 @@
     <joint name="base_ruedadertra_joint">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
-  </transmission>
-
-
-   <!-- Gazebo plugin for ROS Control -->
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
-      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-    </plugin>
-  </gazebo>
+  </transmission> -->
 
 
 

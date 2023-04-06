@@ -18,11 +18,11 @@ ros2 launch higgs2 online_async_launch.py params_file:=./config/mapper_params_on
 
 ros2 launch higgs2  navigation_launch.py use_sim_time:=true
 
---Launch nav2 LOCALIZATION
+--Launch nav2 LOCALIZATION (amcl paso 1)
 
 ros2 launch higgs2 localization_launch.py map:=./config/maps/laberinto_map_save.yaml  use_sim_time:=true
 
---Launch nav2 NAVIGATION
+--Launch nav2 NAVIGATION  (amcl paso 2)
 
 ros2 launch higgs2  navigation_launch.py use_sim_time:=true map_subscribe_transient_local:=true
 
