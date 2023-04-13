@@ -1,0 +1,1 @@
+/home/alvaro/rosej/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/progress.make

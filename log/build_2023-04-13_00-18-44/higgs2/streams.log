@@ -1,0 +1,95 @@
+[0.013s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake /home/alvaro/rosej/higgs2 -DCMAKE_INSTALL_PREFIX=/home/alvaro/rosej/higgs2/install/higgs2
+[0.033s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.229s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.235s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.320s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.461s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.461s] -- Configured cppcheck include dirs: 
+[0.462s] -- Configured cppcheck exclude dirs and/or files: 
+[0.603s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.604s] -- Configured cpplint exclude dirs and/or files: 
+[0.622s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.659s] -- Added test 'lint_cmake' to check CMake code style
+[0.677s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.820s] -- Added test 'uncrustify' to check C / C++ code style
+[0.820s] -- Configured uncrustify additional arguments: 
+[0.838s] -- Added test 'xmllint' to check XML markup files
+[0.839s] -- Configuring done
+[0.841s] -- Generating done
+[0.847s] -- Build files have been written to: /home/alvaro/rosej/higgs2/build/higgs2
+[0.850s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake /home/alvaro/rosej/higgs2 -DCMAKE_INSTALL_PREFIX=/home/alvaro/rosej/higgs2/install/higgs2
+[0.854s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.891s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.917s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
+[0.927s] -- Install configuration: ""
+[0.927s] -- Execute custom install script
+[0.928s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/diffdrive.yaml
+[0.928s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/gazebo_params.yaml
+[0.928s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/joystick.yaml
+[0.929s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/mapper_params_online_async.yaml
+[0.929s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.data
+[0.929s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.pgm
+[0.930s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.posegraph
+[0.930s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.yaml
+[0.930s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.pgm
+[0.931s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.yaml
+[0.931s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.data
+[0.931s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.posegraph
+[0.931s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.pgm
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.yaml
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.data
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.pgm
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.posegraph
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.yaml
+[0.932s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/my_controllers.yaml
+[0.933s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/nav2_params.yaml
+[0.933s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/twist_mux.yaml
+[0.933s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/view_bot.rviz
+[0.933s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control.xacro
+[0.934s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control_skid.xacro
+[0.934s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/inertial_macros.xacro
+[0.934s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/lidar.xacro
+[0.934s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot.urdf.xacro
+[0.935s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot_core.xacro
+[0.935s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/ros2_control.xacro
+[0.935s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.dae
+[0.935s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.stl
+[0.936s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.dae
+[0.936s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.stl
+[0.936s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.dae
+[0.936s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.stl
+[0.936s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/hokuyo.dae
+[0.937s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.dae
+[0.937s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.stl
+[0.937s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.dae
+[0.938s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.stl
+[0.938s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.dae
+[0.938s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.stl
+[0.938s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/joystick.launch.py
+[0.938s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_robot.launch.py
+[0.939s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_sim.launch.py
+[0.939s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/localization_launch.py
+[0.939s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/navigation_launch.py
+[0.939s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/online_async_launch.py
+[0.939s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/provide_map.launch.py
+[0.940s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rplidar.launch.py
+[0.940s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rsp.launch.py
+[0.940s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/laberinto.world
+[0.940s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/papeleras.world
+[0.941s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/prueba.world
+[0.941s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/package_run_dependencies/higgs2
+[0.941s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/parent_prefix_path/higgs2
+[0.941s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.sh
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.dsv
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.sh
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.dsv
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.bash
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.sh
+[0.942s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.zsh
+[0.943s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.dsv
+[0.943s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.dsv
+[0.955s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/packages/higgs2
+[0.956s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config.cmake
+[0.956s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config-version.cmake
+[0.956s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.xml
+[0.960s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alvaro/rosej/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2

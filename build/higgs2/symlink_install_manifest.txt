@@ -41,6 +41,7 @@
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.dae
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.stl
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/joystick.launch.py
+/home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_robot.launch.py
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_sim.launch.py
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/localization_launch.py
 /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/navigation_launch.py

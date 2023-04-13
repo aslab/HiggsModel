@@ -1,0 +1,457 @@
+[0.000000] (-) TimerEvent: {}
+[0.000258] (higgs2) JobQueued: {'identifier': 'higgs2', 'dependencies': OrderedDict()}
+[0.000326] (higgs2) JobStarted: {'identifier': 'higgs2'}
+[0.009825] (higgs2) JobProgress: {'identifier': 'higgs2', 'progress': 'cmake'}
+[0.010365] (higgs2) Command: {'cmd': ['/usr/bin/cmake', '/home/alvaro/rosej/higgs2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/alvaro/rosej/higgs2/install/higgs2'], 'cwd': '/home/alvaro/rosej/higgs2/build/higgs2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'alvaro'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alvaro'), ('OLDPWD', '/home/alvaro/rosej'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '7219'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alvaro'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alvaro'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu-Alvaro:@/tmp/.ICE-unix/1721,unix/Ubuntu-Alvaro:/tmp/.ICE-unix/1721'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/860476b7_7d94_4c95_bff9_1d7cdf8066e1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PM1C31'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alvaro/rosej/higgs2/build/higgs2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble')]), 'shell': False}
+[0.027881] (higgs2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098893] (-) TimerEvent: {}
+[0.177011] (higgs2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.182326] (higgs2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.199059] (-) TimerEvent: {}
+[0.260808] (higgs2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.299191] (-) TimerEvent: {}
+[0.399581] (-) TimerEvent: {}
+[0.456822] (higgs2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.457149] (higgs2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.457306] (higgs2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.499745] (-) TimerEvent: {}
+[0.600157] (-) TimerEvent: {}
+[0.616896] (higgs2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.617163] (higgs2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.636818] (higgs2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.675669] (higgs2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.695440] (higgs2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.700270] (-) TimerEvent: {}
+[0.800595] (-) TimerEvent: {}
+[0.851505] (higgs2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.851783] (higgs2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.871519] (higgs2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.872212] (higgs2) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.874538] (higgs2) StdoutLine: {'line': b'-- Generating done\n'}
+[0.880196] (higgs2) StdoutLine: {'line': b'-- Build files have been written to: /home/alvaro/rosej/higgs2/build/higgs2\n'}
+[0.883425] (higgs2) CommandEnded: {'returncode': 0}
+[0.884184] (higgs2) JobProgress: {'identifier': 'higgs2', 'progress': 'build'}
+[0.885321] (higgs2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alvaro/rosej/higgs2/build/higgs2', '--', '-j12', '-l12'], 'cwd': '/home/alvaro/rosej/higgs2/build/higgs2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'alvaro'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alvaro'), ('OLDPWD', '/home/alvaro/rosej'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '7219'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alvaro'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alvaro'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu-Alvaro:@/tmp/.ICE-unix/1721,unix/Ubuntu-Alvaro:/tmp/.ICE-unix/1721'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/860476b7_7d94_4c95_bff9_1d7cdf8066e1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PM1C31'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alvaro/rosej/higgs2/build/higgs2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble')]), 'shell': False}
+[0.900734] (-) TimerEvent: {}
+[0.937744] (higgs2) CommandEnded: {'returncode': 0}
+[0.957776] (higgs2) JobProgress: {'identifier': 'higgs2', 'progress': 'install'}
+[0.973293] (higgs2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alvaro/rosej/higgs2/build/higgs2'], 'cwd': '/home/alvaro/rosej/higgs2/build/higgs2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'alvaro'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alvaro'), ('OLDPWD', '/home/alvaro/rosej'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '7219'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alvaro'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alvaro'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu-Alvaro:@/tmp/.ICE-unix/1721,unix/Ubuntu-Alvaro:/tmp/.ICE-unix/1721'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/860476b7_7d94_4c95_bff9_1d7cdf8066e1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PM1C31'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alvaro/rosej/higgs2/build/higgs2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alvaro/rosej/higgs2/install/higgs2:/opt/ros/humble')]), 'shell': False}
+[0.984486] (higgs2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.985539] (higgs2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.986518] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/diffdrive.yaml\n'}
+[0.986819] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/gazebo_params.yaml\n'}
+[0.986984] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/joystick.yaml\n'}
+[0.987196] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/mapper_params_online_async.yaml\n'}
+[0.987348] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.data\n'}
+[0.987486] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.pgm\n'}
+[0.987598] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.posegraph\n'}
+[0.987760] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.yaml\n'}
+[0.987869] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.pgm\n'}
+[0.988016] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.yaml\n'}
+[0.988213] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.data\n'}
+[0.988450] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.posegraph\n'}
+[0.988590] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.pgm\n'}
+[0.988800] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.yaml\n'}
+[0.988943] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.data\n'}
+[0.989136] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.pgm\n'}
+[0.989333] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.posegraph\n'}
+[0.989532] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.yaml\n'}
+[0.989728] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/my_controllers.yaml\n'}
+[0.989923] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/nav2_params.yaml\n'}
+[0.990117] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/twist_mux.yaml\n'}
+[0.990341] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/view_bot.rviz\n'}
+[0.990824] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control.xacro\n'}
+[0.991062] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control_skid.xacro\n'}
+[0.991338] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/inertial_macros.xacro\n'}
+[0.991514] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/lidar.xacro\n'}
+[0.991826] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot.urdf.xacro\n'}
+[0.992010] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot_core.xacro\n'}
+[0.992264] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/ros2_control.xacro\n'}
+[0.992454] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.dae\n'}
+[0.992729] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.stl\n'}
+[0.992946] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.dae\n'}
+[0.993131] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.stl\n'}
+[0.993406] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.dae\n'}
+[0.993607] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.stl\n'}
+[0.993793] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/hokuyo.dae\n'}
+[0.994076] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.dae\n'}
+[0.994287] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.stl\n'}
+[0.994473] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.dae\n'}
+[0.994655] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.stl\n'}
+[0.994837] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.dae\n'}
+[0.995119] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.stl\n'}
+[0.995337] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/joystick.launch.py\n'}
+[0.995524] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_robot.launch.py\n'}
+[0.995754] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_sim.launch.py\n'}
+[0.995960] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/localization_launch.py\n'}
+[0.996223] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/navigation_launch.py\n'}
+[0.996511] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/online_async_launch.py\n'}
+[0.996746] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/provide_map.launch.py\n'}
+[0.996935] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rplidar.launch.py\n'}
+[0.997185] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rsp.launch.py\n'}
+[0.997347] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/laberinto.world\n'}
+[0.997495] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/papeleras.world\n'}
+[0.997639] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/prueba.world\n'}
+[0.998837] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/HEAD\n'}
+[0.999068] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/config\n'}
+[0.999309] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/description\n'}
+[0.999522] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/applypatch-msg.sample\n'}
+[0.999801] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/commit-msg.sample\n'}
+[1.000044] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/fsmonitor-watchman.sample\n'}
+[1.000287] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/post-update.sample\n'}
+[1.000569] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-applypatch.sample\n'}
+[1.000747] (-) TimerEvent: {}
+[1.001007] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-commit.sample\n'}
+[1.001280] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-merge-commit.sample\n'}
+[1.001519] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-push.sample\n'}
+[1.001708] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-rebase.sample\n'}
+[1.001967] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-receive.sample\n'}
+[1.002207] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/prepare-commit-msg.sample\n'}
+[1.002393] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/push-to-checkout.sample\n'}
+[1.002575] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/update.sample\n'}
+[1.002766] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/index\n'}
+[1.003018] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/info/exclude\n'}
+[1.003275] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/HEAD\n'}
+[1.003501] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/refs/heads/main\n'}
+[1.003737] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/refs/remotes/origin/HEAD\n'}
+[1.003958] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/objects/pack/pack-948422a796a35559644a7720d9762eb3e62719f8.idx\n'}
+[1.004162] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/objects/pack/pack-948422a796a35559644a7720d9762eb3e62719f8.pack\n'}
+[1.004352] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/packed-refs\n'}
+[1.004535] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/refs/heads/main\n'}
+[1.004719] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/refs/remotes/origin/HEAD\n'}
+[1.004902] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.vscode/c_cpp_properties.json\n'}
+[1.005189] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/CMakeLists.txt\n'}
+[1.005463] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/LICENSE\n'}
+[1.005655] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/README.md\n'}
+[1.005837] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/.cmake/api/v1/query/client-vscode/query.json\n'}
+[1.006021] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/CTestConfiguration.ini\n'}
+[1.006271] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/CTestCustom.cmake\n'}
+[1.006478] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_core/stamps/templates_2_cmake.py.stamp\n'}
+[1.006620] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_package_templates/templates.cmake\n'}
+[1.006757] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake\n'}
+[1.006896] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[1.007034] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/fake_robot_hardware.xml\n'}
+[1.007254] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h\n'}
+[1.007459] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/config.h\n'}
+[1.007664] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h\n'}
+[1.007945] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h\n'}
+[1.008155] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/wheel.h\n'}
+[1.008433] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/launch/fake_robot.launch.py\n'}
+[1.008664] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/launch/test_robot.launch.py\n'}
+[1.008853] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/package.xml\n'}
+[1.009038] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/robot_hardware.xml\n'}
+[1.009287] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/arduino_comms.cpp\n'}
+[1.009438] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/diffdrive_arduino.cpp\n'}
+[1.009585] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/diffdrive_robot.cpp\n'}
+[1.009729] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/fake_robot.cpp\n'}
+[1.009875] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/wheel.cpp\n'}
+[1.014459] (higgs2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):\n'}
+[1.014674] (higgs2) StderrLine: {'line': b'  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow\n'}
+[1.014823] (higgs2) StderrLine: {'line': b'  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.\n'}
+[1.014967] (higgs2) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.015112] (higgs2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.015268] (higgs2) StderrLine: {'line': b'  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)\n'}
+[1.015455] (higgs2) StderrLine: {'line': b'  cmake_install.cmake:46 (include)\n'}
+[1.015657] (higgs2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.015983] (higgs2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.016169] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/HEAD\n'}
+[1.016361] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/config\n'}
+[1.016636] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/description\n'}
+[1.016836] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/applypatch-msg.sample\n'}
+[1.017095] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/commit-msg.sample\n'}
+[1.017282] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/fsmonitor-watchman.sample\n'}
+[1.017467] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/post-update.sample\n'}
+[1.017649] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-applypatch.sample\n'}
+[1.017832] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-commit.sample\n'}
+[1.018014] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-merge-commit.sample\n'}
+[1.018197] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-push.sample\n'}
+[1.018449] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-rebase.sample\n'}
+[1.018718] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-receive.sample\n'}
+[1.018908] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/prepare-commit-msg.sample\n'}
+[1.019146] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/push-to-checkout.sample\n'}
+[1.019360] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/update.sample\n'}
+[1.019543] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/index\n'}
+[1.019830] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/info/exclude\n'}
+[1.020054] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/HEAD\n'}
+[1.020300] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/refs/heads/newans_ros2\n'}
+[1.020486] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/refs/remotes/origin/HEAD\n'}
+[1.020670] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/objects/pack/pack-7f66beb79544babb6fc8e51c3fcb442b7589a2af.idx\n'}
+[1.020982] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/objects/pack/pack-7f66beb79544babb6fc8e51c3fcb442b7589a2af.pack\n'}
+[1.021178] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/packed-refs\n'}
+[1.021364] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/refs/heads/newans_ros2\n'}
+[1.021639] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/refs/remotes/origin/HEAD\n'}
+[1.021829] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.gitignore\n'}
+[1.022102] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.travis.yml\n'}
+[1.022292] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/CHANGELOG.rst\n'}
+[1.022473] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/CMakeLists.txt\n'}
+[1.022655] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/Makefile\n'}
+[1.022931] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/README.md\n'}
+[1.023123] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/.built_by\n'}
+[1.023302] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/COLCON_IGNORE\n'}
+[1.023488] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeCache.txt\n'}
+[1.023687] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeCCompiler.cmake\n'}
+[1.024022] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake\n'}
+[1.024214] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin\n'}
+[1.024398] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin\n'}
+[1.024580] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeSystem.cmake\n'}
+[1.024942] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c\n'}
+[1.025136] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdC/a.out\n'}
+[1.025320] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp\n'}
+[1.025504] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdCXX/a.out\n'}
+[1.025688] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeDirectoryInformation.cmake\n'}
+[1.025868] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeOutput.log\n'}
+[1.026050] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeRuleHashes.txt\n'}
+[1.026298] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/Makefile.cmake\n'}
+[1.026488] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/Makefile2\n'}
+[1.026887] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/TargetDirectories.txt\n'}
+[1.027247] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/cmake.check_cache\n'}
+[1.027567] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/progress.marks\n'}
+[1.027913] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/DependInfo.cmake\n'}
+[1.028225] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/build.make\n'}
+[1.028418] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/cmake_clean.cmake\n'}
+[1.028599] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/cmake_clean_target.cmake\n'}
+[1.028966] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/compiler_depend.make\n'}
+[1.029270] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/compiler_depend.ts\n'}
+[1.029460] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/depend.make\n'}
+[1.029642] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/flags.make\n'}
+[1.029991] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/link.txt\n'}
+[1.030180] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/progress.make\n'}
+[1.030530] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\n'}
+[1.030844] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o.d\n'}
+[1.031118] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o\n'}
+[1.031437] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o.d\n'}
+[1.031627] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/serial.cc.o\n'}
+[1.032000] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/serial.cc.o.d\n'}
+[1.032292] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/DependInfo.cmake\n'}
+[1.032686] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/build.make\n'}
+[1.032939] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/cmake_clean.cmake\n'}
+[1.033125] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/compiler_depend.make\n'}
+[1.033310] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/compiler_depend.ts\n'}
+[1.033707] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/depend.make\n'}
+[1.034003] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o\n'}
+[1.034194] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o.d\n'}
+[1.034377] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/flags.make\n'}
+[1.034560] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/link.txt\n'}
+[1.034743] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/progress.make\n'}
+[1.035117] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/DependInfo.cmake\n'}
+[1.035430] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/build.make\n'}
+[1.035812] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/cmake_clean.cmake\n'}
+[1.035999] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/compiler_depend.make\n'}
+[1.036157] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/compiler_depend.ts\n'}
+[1.036382] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/progress.make\n'}
+[1.036540] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/DependInfo.cmake\n'}
+[1.036696] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/build.make\n'}
+[1.036849] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/cmake_clean.cmake\n'}
+[1.037005] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/compiler_depend.make\n'}
+[1.037256] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/compiler_depend.ts\n'}
+[1.037414] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/progress.make\n'}
+[1.037614] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestConfiguration.ini\n'}
+[1.037823] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestCustom.cmake\n'}
+[1.038034] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestTestfile.cmake\n'}
+[1.038221] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/Makefile\n'}
+[1.038399] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/package.cmake\n'}
+[1.038615] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/serialConfig-version.cmake\n'}
+[1.038916] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/serialConfig.cmake\n'}
+[1.039079] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_cmake_export_include_directories-extras.cmake.stamp\n'}
+[1.039235] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_cmake_export_libraries-extras.cmake.stamp\n'}
+[1.039387] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_prefix_path.sh.stamp\n'}
+[1.039555] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/library_path.sh.stamp\n'}
+[1.039744] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp\n'}
+[1.039901] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/nameConfig.cmake.in.stamp\n'}
+[1.040052] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/package.xml.stamp\n'}
+[1.040201] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/package_xml_2_cmake.py.stamp\n'}
+[1.040567] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/path.sh.stamp\n'}
+[1.040722] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/templates_2_cmake.py.stamp\n'}
+[1.040873] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv\n'}
+[1.041023] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/library_path.dsv\n'}
+[1.041172] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.bash\n'}
+[1.041321] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.dsv\n'}
+[1.041470] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.sh\n'}
+[1.041622] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.zsh\n'}
+[1.041948] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/package.dsv\n'}
+[1.042106] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/path.dsv\n'}
+[1.042259] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.042506] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake\n'}
+[1.042728] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[1.042890] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial\n'}
+[1.043048] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[1.043201] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_package_templates/templates.cmake\n'}
+[1.043355] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake\n'}
+[1.043507] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/cmake_args.last\n'}
+[1.043685] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/cmake_install.cmake\n'}
+[1.043967] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_build.rc\n'}
+[1.044123] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_command_prefix_build.sh\n'}
+[1.044319] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_command_prefix_build.sh.env\n'}
+[1.044475] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/CMakeDirectoryInformation.cmake\n'}
+[1.044627] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/DependInfo.cmake\n'}
+[1.044779] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/build.make\n'}
+[1.044931] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake\n'}
+[1.045083] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/cmake_clean_target.cmake\n'}
+[1.045233] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/compiler_depend.make\n'}
+[1.045385] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/compiler_depend.ts\n'}
+[1.045538] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/depend.make\n'}
+[1.045690] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/flags.make\n'}
+[1.045914] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/link.txt\n'}
+[1.046060] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/progress.make\n'}
+[1.046206] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\n'}
+[1.046351] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d\n'}
+[1.046508] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake\n'}
+[1.046675] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/build.make\n'}
+[1.046819] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake\n'}
+[1.046962] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake\n'}
+[1.047119] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/compiler_depend.make\n'}
+[1.047275] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/compiler_depend.ts\n'}
+[1.047419] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/depend.make\n'}
+[1.047576] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/flags.make\n'}
+[1.047761] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/link.txt\n'}
+[1.047907] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/progress.make\n'}
+[1.048059] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\n'}
+[1.048203] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d\n'}
+[1.048347] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/progress.marks\n'}
+[1.048492] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CTestTestfile.cmake\n'}
+[1.048636] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/Makefile\n'}
+[1.048783] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/cmake_install.cmake\n'}
+[1.048937] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/libgtest.a\n'}
+[1.049085] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/libgtest_main.a\n'}
+[1.049228] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/install_manifest.txt\n'}
+[1.049367] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/libserial.a\n'}
+[1.049509] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/serial_example\n'}
+[1.049653] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/CMakeDirectoryInformation.cmake\n'}
+[1.049798] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/progress.marks\n'}
+[1.049945] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/DependInfo.cmake\n'}
+[1.050090] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/build.make\n'}
+[1.050235] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/cmake_clean.cmake\n'}
+[1.050387] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/compiler_depend.make\n'}
+[1.050532] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/compiler_depend.ts\n'}
+[1.050678] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/depend.make\n'}
+[1.050819] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/flags.make\n'}
+[1.050988] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/link.txt\n'}
+[1.051152] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/progress.make\n'}
+[1.051311] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\n'}
+[1.051457] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o.d\n'}
+[1.051614] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/DependInfo.cmake\n'}
+[1.051800] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/build.make\n'}
+[1.051947] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/cmake_clean.cmake\n'}
+[1.052102] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/compiler_depend.make\n'}
+[1.052254] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/compiler_depend.ts\n'}
+[1.052529] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/depend.make\n'}
+[1.052676] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/flags.make\n'}
+[1.052819] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/link.txt\n'}
+[1.052969] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/progress.make\n'}
+[1.053113] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\n'}
+[1.053257] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o.d\n'}
+[1.053401] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CTestTestfile.cmake\n'}
+[1.053541] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/Makefile\n'}
+[1.053694] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/cmake_install.cmake\n'}
+[1.053887] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/serial-test\n'}
+[1.054072] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/serial-test-timer\n'}
+[1.054252] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/changes.txt\n'}
+[1.054433] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/doc/Doxyfile\n'}
+[1.054712] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/doc/serial.dox\n'}
+[1.054898] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/examples/serial_example.cc\n'}
+[1.055079] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/impl/unix.h\n'}
+[1.055258] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/impl/win.h\n'}
+[1.055438] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/serial.h\n'}
+[1.055628] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/v8stdint.h\n'}
+[1.056419] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/.colcon_install_layout\n'}
+[1.056611] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/COLCON_IGNORE\n'}
+[1.056772] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/_local_setup_util_ps1.py\n'}
+[1.056932] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/_local_setup_util_sh.py\n'}
+[1.057233] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.bash\n'}
+[1.057881] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.ps1\n'}
+[1.058094] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.sh\n'}
+[1.058294] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.zsh\n'}
+[1.060314] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/include/serial/serial.h\n'}
+[1.060779] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/include/serial/v8stdint.h\n'}
+[1.061948] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/lib/libserial.a\n'}
+[1.062158] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[1.062347] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[1.062534] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[1.062724] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/colcon-core/packages/serial\n'}
+[1.062915] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.063144] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.063329] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[1.065303] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[1.065542] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[1.065731] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[1.065914] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/library_path.dsv\n'}
+[1.066098] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/library_path.sh\n'}
+[1.066280] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/path.dsv\n'}
+[1.066462] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/path.sh\n'}
+[1.066644] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.dsv\n'}
+[1.066822] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.ps1\n'}
+[1.067000] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.sh\n'}
+[1.067179] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.bash\n'}
+[1.067358] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.dsv\n'}
+[1.067538] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.sh\n'}
+[1.067750] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.zsh\n'}
+[1.068434] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.bash\n'}
+[1.068649] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.dsv\n'}
+[1.068837] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.ps1\n'}
+[1.070380] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.sh\n'}
+[1.070629] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.xml\n'}
+[1.070822] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.zsh\n'}
+[1.071003] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.bash\n'}
+[1.071185] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.ps1\n'}
+[1.072922] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.sh\n'}
+[1.073416] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.zsh\n'}
+[1.073609] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/COLCON_IGNORE\n'}
+[1.073788] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/events.log\n'}
+[1.073967] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/logger_all.log\n'}
+[1.074148] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/command.log\n'}
+[1.074328] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stderr.log\n'}
+[1.074507] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stdout.log\n'}
+[1.074689] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stdout_stderr.log\n'}
+[1.074867] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/streams.log\n'}
+[1.075049] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/events.log\n'}
+[1.075312] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/logger_all.log\n'}
+[1.075499] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/command.log\n'}
+[1.075703] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stderr.log\n'}
+[1.075896] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stdout.log\n'}
+[1.076079] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stdout_stderr.log\n'}
+[1.076261] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/streams.log\n'}
+[1.076441] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/events.log\n'}
+[1.076622] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/logger_all.log\n'}
+[1.076802] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/command.log\n'}
+[1.076984] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stderr.log\n'}
+[1.077164] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stdout.log\n'}
+[1.077342] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stdout_stderr.log\n'}
+[1.077523] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/streams.log\n'}
+[1.077753] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/package.xml\n'}
+[1.077941] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/serial.sublime-project\n'}
+[1.078142] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_linux.cc\n'}
+[1.078322] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_osx.cc\n'}
+[1.078518] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_win.cc\n'}
+[1.078704] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/unix.cc\n'}
+[1.079052] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/win.cc\n'}
+[1.079240] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/serial.cc\n'}
+[1.079426] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/CMakeLists.txt\n'}
+[1.079564] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/mdc2250.cc\n'}
+[1.079854] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/python_serial_test.py\n'}
+[1.079984] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/tokenizer.cc\n'}
+[1.080064] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/unit/unix_timer_tests.cc\n'}
+[1.080145] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/unix_serial_tests.cc\n'}
+[1.080221] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/serial/serial.vcxproj\n'}
+[1.080297] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/serial/serial.vcxproj.filters\n'}
+[1.080374] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/test_serial/test_serial.vcxproj\n'}
+[1.080583] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/test_serial/test_serial.vcxproj.filters\n'}
+[1.080664] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/visual_studio.sln\n'}
+[1.080740] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/package_run_dependencies/higgs2\n'}
+[1.080816] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/parent_prefix_path/higgs2\n'}
+[1.080892] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.sh\n'}
+[1.080971] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.dsv\n'}
+[1.081052] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.sh\n'}
+[1.081142] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.dsv\n'}
+[1.081222] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.bash\n'}
+[1.081297] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.sh\n'}
+[1.081373] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.zsh\n'}
+[1.081753] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.dsv\n'}
+[1.081832] (higgs2) StdoutLine: {'line': b'-- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.dsv\n'}
+[1.081915] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/packages/higgs2\n'}
+[1.083091] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config.cmake\n'}
+[1.083273] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config-version.cmake\n'}
+[1.083353] (higgs2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.xml\n'}
+[1.083433] (higgs2) CommandEnded: {'returncode': 0}
+[1.101421] (-) TimerEvent: {}
+[1.140100] (higgs2) JobEnded: {'identifier': 'higgs2', 'rc': 0}
+[1.140829] (-) EventReactorShutdown: {}

@@ -1,0 +1,13 @@
+--joystick
+sudo apt install joystick jstest-gtk evtest
+--nav2
+--ros2_control
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers
+--xacro
+sudo apt install ros-humble-xacro
+
+//////////JETSON
+
+git clone https://github.com/joshnewans/serial
+git clone https://github.com/joshnewans/diffdrive_arduino
+

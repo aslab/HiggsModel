@@ -1,0 +1,436 @@
+[0.016s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.034s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.229s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.242s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.339s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.513s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.514s] -- Configured cppcheck include dirs: 
+[0.514s] -- Configured cppcheck exclude dirs and/or files: 
+[0.651s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.651s] -- Configured cpplint exclude dirs and/or files: 
+[0.669s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.703s] -- Added test 'lint_cmake' to check CMake code style
+[0.721s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.858s] -- Added test 'uncrustify' to check C / C++ code style
+[0.858s] -- Configured uncrustify additional arguments: 
+[0.875s] -- Added test 'xmllint' to check XML markup files
+[0.876s] -- Configuring done
+[0.887s] -- Generating done
+[0.887s] -- Build files have been written to: /home/alvaro/rosej/higgs2/build/higgs2
+[0.920s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
+[0.960s] Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
+[0.965s] -- Install configuration: ""
+[0.965s] -- Execute custom install script
+[0.966s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/diffdrive.yaml
+[0.966s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/gazebo_params.yaml
+[0.966s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/joystick.yaml
+[0.966s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/mapper_params_online_async.yaml
+[0.967s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.data
+[0.967s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.pgm
+[0.967s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.posegraph
+[0.967s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map.yaml
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.pgm
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_save.yaml
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.data
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/laberinto_map_serial.posegraph
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.pgm
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papeleras_map.yaml
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.data
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.pgm
+[0.968s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.posegraph
+[0.969s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/maps/papmap.yaml
+[0.969s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/my_controllers.yaml
+[0.969s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/nav2_params.yaml
+[0.969s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/twist_mux.yaml
+[0.969s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/config/view_bot.rviz
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/gazebo_control_skid.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/inertial_macros.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/lidar.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot.urdf.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/robot_core.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/description/ros2_control.xacro
+[0.970s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.dae
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/chasis.stl
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.dae
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/cubierta.stl
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.dae
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/eje.stl
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/hokuyo.dae
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.dae
+[0.971s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/rueda.stl
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.dae
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_delantero.stl
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.dae
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/src/meshes/sonar_trasero.stl
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/joystick.launch.py
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_robot.launch.py
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/launch_sim.launch.py
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/localization_launch.py
+[0.972s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/navigation_launch.py
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/online_async_launch.py
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/provide_map.launch.py
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rplidar.launch.py
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/launch/rsp.launch.py
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/laberinto.world
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/papeleras.world
+[0.973s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/worlds/prueba.world
+[0.973s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/HEAD
+[0.978s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/config
+[0.984s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/description
+[0.991s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/applypatch-msg.sample
+[0.997s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/commit-msg.sample
+[1.004s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/fsmonitor-watchman.sample
+[1.010s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/post-update.sample
+[1.017s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-applypatch.sample
+[1.030s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-commit.sample
+[1.038s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-merge-commit.sample
+[1.051s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-push.sample
+[1.059s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-rebase.sample
+[1.072s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/pre-receive.sample
+[1.080s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/prepare-commit-msg.sample
+[1.086s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/push-to-checkout.sample
+[1.093s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/hooks/update.sample
+[1.106s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/index
+[1.114s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/info/exclude
+[1.127s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/HEAD
+[1.135s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/refs/heads/main
+[1.148s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/logs/refs/remotes/origin/HEAD
+[1.156s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/objects/pack/pack-948422a796a35559644a7720d9762eb3e62719f8.idx
+[1.162s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/objects/pack/pack-948422a796a35559644a7720d9762eb3e62719f8.pack
+[1.175s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/packed-refs
+[1.189s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/refs/heads/main
+[1.196s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.git/refs/remotes/origin/HEAD
+[1.209s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/.vscode/c_cpp_properties.json
+[1.217s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/CMakeLists.txt
+[1.230s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/LICENSE
+[1.238s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/README.md
+[1.251s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/.cmake/api/v1/query/client-vscode/query.json
+[1.266s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/CTestConfiguration.ini
+[1.273s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/CTestCustom.cmake
+[1.287s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_core/stamps/templates_2_cmake.py.stamp
+[1.301s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_package_templates/templates.cmake
+[1.315s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/build/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+[1.330s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/controllers/robot_controller_example.yaml
+[1.343s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/fake_robot_hardware.xml
+[1.358s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/arduino_comms.h
+[1.372s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/config.h
+[1.386s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino.h
+[1.400s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/fake_robot.h
+[1.414s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/include/diffdrive_arduino/wheel.h
+[1.428s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/launch/fake_robot.launch.py
+[1.439s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/launch/test_robot.launch.py
+[1.451s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/package.xml
+[1.458s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/robot_hardware.xml
+[1.471s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/arduino_comms.cpp
+[1.479s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/diffdrive_arduino.cpp
+[1.492s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/diffdrive_robot.cpp
+[1.506s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/fake_robot.cpp
+[1.513s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/diffdrive_arduino/src/wheel.cpp
+[1.532s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[1.532s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[1.533s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[1.533s]   Use the cmake_policy command to set the policy and suppress this warning.
+[1.533s] Call Stack (most recent call first):
+[1.533s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[1.534s]   cmake_install.cmake:46 (include)
+[1.534s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.534s] [0m
+[1.534s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/HEAD
+[1.546s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/config
+[1.560s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/description
+[1.575s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/applypatch-msg.sample
+[1.588s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/commit-msg.sample
+[1.602s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/fsmonitor-watchman.sample
+[1.616s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/post-update.sample
+[1.630s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-applypatch.sample
+[1.637s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-commit.sample
+[1.644s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-merge-commit.sample
+[1.658s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-push.sample
+[1.666s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-rebase.sample
+[1.672s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/pre-receive.sample
+[1.685s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/prepare-commit-msg.sample
+[1.693s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/push-to-checkout.sample
+[1.706s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/hooks/update.sample
+[1.719s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/index
+[1.733s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/info/exclude
+[1.741s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/HEAD
+[1.754s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/refs/heads/newans_ros2
+[1.762s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/logs/refs/remotes/origin/HEAD
+[1.775s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/objects/pack/pack-7f66beb79544babb6fc8e51c3fcb442b7589a2af.idx
+[1.789s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/objects/pack/pack-7f66beb79544babb6fc8e51c3fcb442b7589a2af.pack
+[1.797s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/packed-refs
+[1.811s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/refs/heads/newans_ros2
+[1.819s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.git/refs/remotes/origin/HEAD
+[1.833s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.gitignore
+[1.841s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/.travis.yml
+[1.855s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/CHANGELOG.rst
+[1.869s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/CMakeLists.txt
+[1.883s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/Makefile
+[1.896s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/README.md
+[1.910s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/.built_by
+[1.924s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/COLCON_IGNORE
+[1.937s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeCache.txt
+[1.951s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeCCompiler.cmake
+[1.959s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake
+[1.965s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin
+[1.972s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_CXX.bin
+[1.986s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CMakeSystem.cmake
+[1.994s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c
+[2.008s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdC/a.out
+[2.016s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+[2.023s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/3.22.1/CompilerIdCXX/a.out
+[2.037s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeDirectoryInformation.cmake
+[2.044s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeOutput.log
+[2.052s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/CMakeRuleHashes.txt
+[2.058s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/Makefile.cmake
+[2.065s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/Makefile2
+[2.079s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/TargetDirectories.txt
+[2.085s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/cmake.check_cache
+[2.099s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/progress.marks
+[2.107s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/DependInfo.cmake
+[2.120s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/build.make
+[2.127s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/cmake_clean.cmake
+[2.140s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/cmake_clean_target.cmake
+[2.148s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/compiler_depend.make
+[2.154s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/compiler_depend.ts
+[2.168s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/depend.make
+[2.175s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/flags.make
+[2.188s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/link.txt
+[2.196s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/progress.make
+[2.203s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o
+[2.210s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o.d
+[2.223s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o
+[2.231s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o.d
+[2.244s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/serial.cc.o
+[2.258s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/serial.cc.o.d
+[2.271s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/DependInfo.cmake
+[2.284s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/build.make
+[2.297s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/cmake_clean.cmake
+[2.310s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/compiler_depend.make
+[2.324s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/compiler_depend.ts
+[2.336s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/depend.make
+[2.349s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o
+[2.363s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/examples/serial_example.cc.o.d
+[2.371s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/flags.make
+[2.385s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/link.txt
+[2.399s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_example.dir/progress.make
+[2.413s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/DependInfo.cmake
+[2.427s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/build.make
+[2.441s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/cmake_clean.cmake
+[2.449s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/compiler_depend.make
+[2.457s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/compiler_depend.ts
+[2.471s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/serial_uninstall.dir/progress.make
+[2.479s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/DependInfo.cmake
+[2.486s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/build.make
+[2.493s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/cmake_clean.cmake
+[2.500s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/compiler_depend.make
+[2.507s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/compiler_depend.ts
+[2.514s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CMakeFiles/uninstall.dir/progress.make
+[2.523s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestConfiguration.ini
+[2.531s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestCustom.cmake
+[2.538s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/CTestTestfile.cmake
+[2.551s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/Makefile
+[2.564s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/package.cmake
+[2.571s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/serialConfig-version.cmake
+[2.578s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/serialConfig.cmake
+[2.591s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_cmake_export_include_directories-extras.cmake.stamp
+[2.604s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_cmake_export_libraries-extras.cmake.stamp
+[2.616s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/ament_prefix_path.sh.stamp
+[2.628s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/library_path.sh.stamp
+[2.640s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp
+[2.648s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/nameConfig.cmake.in.stamp
+[2.655s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/package.xml.stamp
+[2.662s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/package_xml_2_cmake.py.stamp
+[2.669s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/path.sh.stamp
+[2.676s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_core/stamps/templates_2_cmake.py.stamp
+[2.685s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv
+[2.692s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/library_path.dsv
+[2.699s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.bash
+[2.708s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.dsv
+[2.716s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.sh
+[2.723s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/local_setup.zsh
+[2.730s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/package.dsv
+[2.739s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_environment_hooks/path.dsv
+[2.746s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake
+[2.760s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake
+[2.772s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial
+[2.784s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial
+[2.792s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial
+[2.801s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_package_templates/templates.cmake
+[2.808s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+[2.814s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/cmake_args.last
+[2.822s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/cmake_install.cmake
+[2.829s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_build.rc
+[2.842s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_command_prefix_build.sh
+[2.855s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/colcon_command_prefix_build.sh.env
+[2.862s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/CMakeDirectoryInformation.cmake
+[2.869s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/DependInfo.cmake
+[2.876s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/build.make
+[2.890s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake
+[2.898s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/cmake_clean_target.cmake
+[2.905s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/compiler_depend.make
+[2.912s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/compiler_depend.ts
+[2.919s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/depend.make
+[2.926s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/flags.make
+[2.933s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/link.txt
+[2.941s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/progress.make
+[2.948s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[2.956s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+[2.964s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake
+[2.973s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/build.make
+[2.981s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake
+[2.989s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
+[2.996s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/compiler_depend.make
+[3.009s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/compiler_depend.ts
+[3.022s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/depend.make
+[3.031s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/flags.make
+[3.038s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/link.txt
+[3.044s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/progress.make
+[3.051s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[3.058s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+[3.064s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CMakeFiles/progress.marks
+[3.070s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/CTestTestfile.cmake
+[3.077s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/Makefile
+[3.084s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/cmake_install.cmake
+[3.090s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/libgtest.a
+[3.096s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/gtest/libgtest_main.a
+[3.103s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/install_manifest.txt
+[3.110s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/libserial.a
+[3.117s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/serial_example
+[3.129s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/CMakeDirectoryInformation.cmake
+[3.137s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/progress.marks
+[3.150s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/DependInfo.cmake
+[3.158s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/build.make
+[3.164s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/cmake_clean.cmake
+[3.178s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/compiler_depend.make
+[3.191s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/compiler_depend.ts
+[3.205s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/depend.make
+[3.218s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/flags.make
+[3.231s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/link.txt
+[3.245s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/progress.make
+[3.258s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o
+[3.272s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o.d
+[3.279s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/DependInfo.cmake
+[3.293s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/build.make
+[3.307s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/cmake_clean.cmake
+[3.321s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/compiler_depend.make
+[3.334s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/compiler_depend.ts
+[3.347s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/depend.make
+[3.354s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/flags.make
+[3.367s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/link.txt
+[3.374s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/progress.make
+[3.381s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o
+[3.394s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o.d
+[3.401s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/CTestTestfile.cmake
+[3.414s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/Makefile
+[3.427s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/cmake_install.cmake
+[3.434s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/serial-test
+[3.447s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/build/serial/tests/serial-test-timer
+[3.460s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/changes.txt
+[3.474s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/doc/Doxyfile
+[3.487s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/doc/serial.dox
+[3.501s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/examples/serial_example.cc
+[3.508s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/impl/unix.h
+[3.521s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/impl/win.h
+[3.534s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/serial.h
+[3.546s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/include/serial/v8stdint.h
+[3.558s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/.colcon_install_layout
+[3.566s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/COLCON_IGNORE
+[3.572s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/_local_setup_util_ps1.py
+[3.578s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/_local_setup_util_sh.py
+[3.586s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.bash
+[3.592s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.ps1
+[3.600s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.sh
+[3.606s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/local_setup.zsh
+[3.613s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/include/serial/serial.h
+[3.620s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/include/serial/v8stdint.h
+[3.627s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/lib/libserial.a
+[3.634s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[3.641s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/packages/serial
+[3.649s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[3.656s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/colcon-core/packages/serial
+[3.663s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.670s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[3.677s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/serialConfig-version.cmake
+[3.684s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/cmake/serialConfig.cmake
+[3.691s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/ament_prefix_path.dsv
+[3.697s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/ament_prefix_path.sh
+[3.704s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/library_path.dsv
+[3.710s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/library_path.sh
+[3.717s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/path.dsv
+[3.724s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/environment/path.sh
+[3.732s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.dsv
+[3.740s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.ps1
+[3.746s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/hook/cmake_prefix_path.sh
+[3.759s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.bash
+[3.767s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.dsv
+[3.780s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.sh
+[3.787s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/local_setup.zsh
+[3.800s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.bash
+[3.808s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.dsv
+[3.814s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.ps1
+[3.828s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.sh
+[3.835s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.xml
+[3.848s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/serial/share/serial/package.zsh
+[3.855s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.bash
+[3.868s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.ps1
+[3.875s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.sh
+[3.888s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/install/setup.zsh
+[3.895s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/COLCON_IGNORE
+[3.908s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/events.log
+[3.922s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/logger_all.log
+[3.929s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/command.log
+[3.943s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stderr.log
+[3.950s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stdout.log
+[3.963s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/stdout_stderr.log
+[3.970s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/build_2023-04-12_23-48-44/serial/streams.log
+[3.984s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/events.log
+[3.991s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/logger_all.log
+[3.998s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/command.log
+[4.012s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stderr.log
+[4.020s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stdout.log
+[4.034s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/stdout_stderr.log
+[4.042s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest/serial/streams.log
+[4.057s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/events.log
+[4.064s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/logger_all.log
+[4.070s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/command.log
+[4.077s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stderr.log
+[4.087s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stdout.log
+[4.094s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/stdout_stderr.log
+[4.101s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/log/latest_build/serial/streams.log
+[4.108s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/package.xml
+[4.115s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/serial.sublime-project
+[4.122s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_linux.cc
+[4.129s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_osx.cc
+[4.137s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/list_ports/list_ports_win.cc
+[4.144s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/unix.cc
+[4.152s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/impl/win.cc
+[4.158s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/src/serial.cc
+[4.165s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/CMakeLists.txt
+[4.173s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/mdc2250.cc
+[4.180s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/python_serial_test.py
+[4.187s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/proof_of_concepts/tokenizer.cc
+[4.194s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/unit/unix_timer_tests.cc
+[4.201s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/tests/unix_serial_tests.cc
+[4.208s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/serial/serial.vcxproj
+[4.216s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/serial/serial.vcxproj.filters
+[4.222s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/test_serial/test_serial.vcxproj
+[4.229s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/test_serial/test_serial.vcxproj.filters
+[4.237s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/serial/visual_studio/visual_studio.sln
+[4.244s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/package_run_dependencies/higgs2
+[4.244s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/parent_prefix_path/higgs2
+[4.244s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.sh
+[4.245s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/ament_prefix_path.dsv
+[4.245s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.sh
+[4.245s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/environment/path.dsv
+[4.245s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.bash
+[4.246s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.sh
+[4.246s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.zsh
+[4.246s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/local_setup.dsv
+[4.246s] -- Symlinking: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.dsv
+[4.252s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/ament_index/resource_index/packages/higgs2
+[4.252s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config.cmake
+[4.253s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/cmake/higgs2Config-version.cmake
+[4.253s] -- Up-to-date symlink: /home/alvaro/rosej/higgs2/install/higgs2/share/higgs2/package.xml
+[4.256s] Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
