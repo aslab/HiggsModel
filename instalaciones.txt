@@ -15,5 +15,11 @@ sudo apt install python3-serial
 //////////JETSON
 
 git clone https://github.com/joshnewans/serial
-git clone https://github.com/joshnewans/diffdrive_arduino
+git clone git@github.com:aslab/HiggsModel.git
+or
+git clone https://github.com/aslab/HiggsModel.git higgs2 -b higgs2
+git clone https://github.com/joshnewans/diffdrive_arduino for foxy
+git clone https://github.com/AlvaroBarry/diffdrive_arduino.git
+git clone https://github.com/joshnewans/serial_motor_demo
+
 
