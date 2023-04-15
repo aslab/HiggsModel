@@ -5,6 +5,12 @@ sudo apt install joystick jstest-gtk evtest
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers
 --xacro
 sudo apt install ros-humble-xacro
+--rqt
+sudo apt install ~nros-humble-rqt*
+--turtlesim
+sudo apt install ros-humble-turtlesim
+--python3-serial
+sudo apt install python3-serial
 
 //////////JETSON
 
