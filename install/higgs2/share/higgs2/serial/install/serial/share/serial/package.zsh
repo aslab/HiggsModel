@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/install/serial/share/serial/package.zsh

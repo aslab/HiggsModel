@@ -18,8 +18,8 @@ diff_cont:
 
     left_wheel_names: ['base_ruedaizqdel_joint', 'base_ruedaizqtra_joint']
     right_wheel_names: ['base_ruedaderdel_joint', 'base_ruedadertra_joint']
-    wheel_separation: 0.415 #0.394 or 0.415 antiguo
-    wheel_radius: 0.1 
+    wheel_separation: 0.31 #0.394 or 0.415 antiguo
+    wheel_radius: 0.1
 
     use_stamped_vel: false
 

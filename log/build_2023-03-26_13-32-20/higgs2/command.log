@@ -1,6 +1,0 @@
-Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/alvaro/rosej/higgs2 -DCMAKE_INSTALL_PREFIX=/home/alvaro/rosej/higgs2/install/higgs2
-Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/alvaro/rosej/higgs2 -DCMAKE_INSTALL_PREFIX=/home/alvaro/rosej/higgs2/install/higgs2
-Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
-Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alvaro/rosej/higgs2/build/higgs2 -- -j12 -l12
-Invoking command in '/home/alvaro/rosej/higgs2/build/higgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2
-Invoked command in '/home/alvaro/rosej/higgs2/build/higgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/alvaro/rosej/higgs2/build/higgs2

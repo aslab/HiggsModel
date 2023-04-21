@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/build/serial/colcon_command_prefix_build.sh

@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/build/serial/tests/CMakeFiles/serial-test.dir/progress.make

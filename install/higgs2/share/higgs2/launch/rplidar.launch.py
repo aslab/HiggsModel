@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/launch/rplidar.launch.py

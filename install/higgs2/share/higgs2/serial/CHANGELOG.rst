@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/CHANGELOG.rst

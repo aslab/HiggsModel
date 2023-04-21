@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/build/serial/tests/cmake_install.cmake

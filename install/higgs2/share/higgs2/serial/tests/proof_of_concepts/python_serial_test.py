@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/tests/proof_of_concepts/python_serial_test.py

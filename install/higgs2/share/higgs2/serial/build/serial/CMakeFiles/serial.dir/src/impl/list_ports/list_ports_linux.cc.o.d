@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/build/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o.d

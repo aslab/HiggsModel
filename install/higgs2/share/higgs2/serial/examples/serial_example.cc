@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/examples/serial_example.cc

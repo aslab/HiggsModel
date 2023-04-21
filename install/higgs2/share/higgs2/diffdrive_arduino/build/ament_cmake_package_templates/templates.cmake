@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/diffdrive_arduino/build/ament_cmake_package_templates/templates.cmake

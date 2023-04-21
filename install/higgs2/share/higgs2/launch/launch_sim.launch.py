@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/launch/launch_sim.launch.py

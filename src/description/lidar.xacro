@@ -6,14 +6,14 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-    <mesh filename="file://src/meshes/hokuyo.dae"/>
+    <mesh filename="$(find higgs2)/src/meshes/hokuyo.dae"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://src/meshes/hokuyo.dae"/>
+        <mesh filename="$(find higgs2)/src/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 

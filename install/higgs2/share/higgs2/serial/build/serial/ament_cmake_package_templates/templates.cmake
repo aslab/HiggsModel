@@ -1,1 +1,0 @@
-/home/alvaro/rosej/higgs2/serial/build/serial/ament_cmake_package_templates/templates.cmake
