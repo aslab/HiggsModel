@@ -40,11 +40,14 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
     1st give permission:
     sudo chmod 666 /dev/ttyACM0  
-(pyserial-)miniterm -e /dev/ttyACM0 57600
+pyserial-miniterm -e /dev/ttyACM0 57600
 
 --Launch ROBOT
 
 ros2 launch higgs2 launch_robot.launch.py 
+
+//ros2 launch higgs2 rsp.launch.py use_sim_time:=true
+
 
 
 

@@ -3,6 +3,9 @@ sudo apt install joystick jstest-gtk evtest
 --nav2
 --ros2_control
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers
+
+sudo apt-get install ros-foxy-gazebo-ros2-control
+ros2 run controller_manager spawner.py -h
 --xacro
 sudo apt install ros-humble-xacro
 --rqt
