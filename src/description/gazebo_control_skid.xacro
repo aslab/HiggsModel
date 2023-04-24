@@ -5,7 +5,7 @@
         <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
             <ros>
             <namespace>/</namespace>
-            <remapping>cmd_vel:=cmd_vel</remapping>
+            <remapping>cmd_vel:=/diff_cont/cmd_vel_unstamped</remapping>
             <remapping>odom:=odom</remapping>
             </ros>
 
@@ -24,8 +24,8 @@
             <wheel_separation>0.415</wheel_separation>
             <wheel_separation>0.415</wheel_separation>
 
-            <wheel_diameter>0.1</wheel_diameter>
-            <wheel_diameter>0.1</wheel_diameter>
+            <wheel_diameter>0.107</wheel_diameter>
+            <wheel_diameter>0.107</wheel_diameter>
 
             <!-- limits -->
             <max_wheel_torque>200</max_wheel_torque>

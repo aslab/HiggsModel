@@ -74,20 +74,6 @@ def generate_launch_description():
         executable="spawner",
         arguments=["joint_broad"],
     )
-
-#    relay_odom = Node(
-#     name="relay_odom",
-#     package="topic_tools",
-#     executable="relay",
-#     parameters=[
-#         {
-#             "input_topic": "/diff_cont/odom",
-#             "output_topic": "/odom",
-#         }
-#     ],
-#     output="screen",
-#     )
-    
     
 
 
@@ -98,7 +84,6 @@ def generate_launch_description():
         twist_mux,
         gazebo,
         spawn_entity,
-        #relay_odom,
         diff_drive_spawner,
         joint_broad_spawner,
         rviz2

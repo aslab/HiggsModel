@@ -8,7 +8,7 @@
             <left_joint>base_ruedaizqdel_joint</left_joint>
             <right_joint>base_ruedaderdel_joint</right_joint>
             <wheel_separation>0.415</wheel_separation>
-            <wheel_diameter>0.1</wheel_diameter>
+            <wheel_diameter>0.107</wheel_diameter>
 
 
             <!-- Limits -->

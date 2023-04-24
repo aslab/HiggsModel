@@ -14,7 +14,7 @@
                 <param name="device">/dev/ttyACM0</param>
                 <param name="baud_rate">57600</param>
                 <param name="timeout">1000</param>
-                <param name="enc_counts_per_rev">34000</param> 
+                <param name="enc_counts_per_rev">35000</param> 
                 <!-- encoder= mas o menos =34800 -->
             </hardware>
             <joint name="base_ruedaizqdel_joint">

@@ -2,17 +2,17 @@
 
 --Launch gazebo with papeleras.world
 
-ros2 launch higgs2 launch_sim.launch.py world:=./worlds/laberinto.world 
+ros2 launch higgs2 launch_sim.launch.py world:=./higgs2/worlds/laberinto.world 
 
 --Launch rviz2 (might be on the above)
 
-ros2 run rviz2 rviz2 -d config/view_bot.rviz --ros-args -p use_sim_time:=true
+ros2 run rviz2 rviz2 -d higgs2/config/view_bot.rviz --ros-args -p use_sim_time:=true
 
 /////       SLAM AND NAV2
 
 --Launch slam_toolbox for map
 
-ros2 launch higgs2 online_async_launch.py params_file:=./config/mapper_params_online_async.yaml use_sim_time:=true
+ros2 launch higgs2 online_async_launch.py params_file:=./higgs2/config/mapper_params_online_async.yaml use_sim_time:=true
 
 --Launch nav2 normal
 
@@ -20,7 +20,7 @@ ros2 launch higgs2  navigation_launch.py use_sim_time:=true
 
 --Launch nav2 LOCALIZATION (amcl paso 1)
 
-ros2 launch higgs2 localization_launch.py map:=./config/maps/laberinto_map_save.yaml  use_sim_time:=true
+ros2 launch higgs2 localization_launch.py map:=./higgs2/config/maps/laberinto_map_save.yaml  use_sim_time:=true
 
 --Launch nav2 NAVIGATION  (amcl paso 2)
 
