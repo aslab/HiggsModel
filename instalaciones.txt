@@ -35,11 +35,20 @@ ros2 launch twist_mux_test twist_mux_test.launch.py
 //////////JETSON
 
 git clone https://github.com/joshnewans/serial
-git clone git@github.com:aslab/HiggsModel.git
-or
-git clone https://github.com/aslab/HiggsModel.git higgs2 -b higgs2
-git clone https://github.com/joshnewans/diffdrive_arduino for foxy
-git clone https://github.com/AlvaroBarry/diffdrive_arduino.git
 git clone https://github.com/joshnewans/serial_motor_demo
+
+
+git clone git@github.com:aslab/HiggsModel.git higgs2 -b higgs2_foxy
+or
+git clone https://github.com/aslab/HiggsModel.git higgs2 -b higgs2_foxy
+
+git clone git@github.com:AlvaroBarry/diffdrive_arduino.git -b foxy
+or
+git clone https://github.com/AlvaroBarry/diffdrive_arduino.git -b foxy
+
+git clone git@github.com:AlvaroBarry/ros_arduino_bridge.git
+or
+git clone https://github.com/AlvaroBarry/ros_arduino_bridge.git
+
 
 
