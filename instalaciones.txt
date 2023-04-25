@@ -1,19 +1,36 @@
---joystick
 sudo apt install joystick jstest-gtk evtest
---nav2
---ros2_control
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers
-
+sudo apt install ros-foxy-ros2-control ros-foxy-ros2-controllers
 sudo apt-get install ros-foxy-gazebo-ros2-control
-ros2 run controller_manager spawner.py -h
---xacro
-sudo apt install ros-humble-xacro
---rqt
-sudo apt install ~nros-humble-rqt*
---turtlesim
-sudo apt install ros-humble-turtlesim
---python3-serial
+//ros2 run controller_manager spawner.py -h
+sudo apt install ros-foxy-xacro
+sudo apt install ~nros-foxy-rqt*
+sudo apt install ros-foxy-turtlesim
 sudo apt install python3-serial
+sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup '~ros-foxy-turtlebot3-.*'
+sudo apt install ros-foxy-slam-toolbox
+
+/////NAV2 AND ROS2
+mkdir -p ~/nav2_ws/src
+cd ~/nav2_ws/src
+git clone https://github.com/ros-planning/navigation2.git --branch foxy-devel
+cd ~/nav2_ws
+rosdep install -y -r -q --from-paths src --ignore-src --rosdistro foxy
+colcon build --symlink-install
+
+sudo apt install ros-foxy-navigation2
+sudo apt install ros-foxy-nav2-bringup
+sudo apt install ros-foxy-turtlebot3*
+
+
+
+////TWIST MUX FOR FOXY
+git clone https://github.com/robofoundry/twist_mux_example.git
+cd twist_mux_example
+# run following commands from root of your workspace
+rosdep install --from-path src --ignore-src -y
+colcon build
+source install/setup.bash
+ros2 launch twist_mux_test twist_mux_test.launch.py
 
 //////////JETSON
 
