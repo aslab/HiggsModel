@@ -14,7 +14,7 @@
                 <param name="device">/dev/ttyACM0</param>
                 <param name="baud_rate">57600</param>
                 <param name="timeout">1000</param>
-                <param name="enc_counts_per_rev">3436</param>
+                <param name="enc_counts_per_rev">34000</param>
             </hardware>
             <joint name="base_ruedaizqdel_joint">
             <command_interface name="velocity">

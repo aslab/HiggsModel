@@ -39,7 +39,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 --Motor demo
 
 1st give permission:
-    sudo chmod 666 /dev/ttyACM0  
+    sudo chmod 666 /dev/ttyACM0
     carduino
 miniterm -e /dev/ttyACM0 57600
 
