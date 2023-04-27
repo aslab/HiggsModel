@@ -47,6 +47,9 @@ miniterm -e /dev/ttyACM0 57600
 
 ros2 launch higgs2 launch_robot.launch.py 
 
+ros2 launch higgs2 joystick.launch.py 
+
+
 //ros2 launch higgs2 rsp.launch.py use_sim_time:=true
 
 
