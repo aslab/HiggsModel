@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo>
+    <!-- DIFFERENTIAL DRIVE -->
+    <!--ign topic -t "/cmd_vel" -m ignition.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"-->
+    <plugin filename="libignition-gazebo-diff-drive-system.so"
+      name="ignition::gazebo::systems::DiffDrive">
+      <left_joint>base_ruedaizqdel_joint</left_joint>
+      <left_joint>base_ruedaizqtra_joint</left_joint>
+      <right_joint>base_ruedaderdel_joint</right_joint>
+      <right_joint>base_ruedadertra_joint</right_joint>
+      <wheel_separation>0.415</wheel_separation>
+      <wheel_radius>0.1</wheel_radius>
+      <odom_publish_frequency>1000</odom_publish_frequency>
+      <topic>/cmd_vel</topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link0</child_frame_id>
+    </plugin>
+  </gazebo>
+
+  <!-- JOINT STATE PUBLISHER -->
+  <gazebo>
+    <plugin filename="libignition-gazebo-joint-state-publisher-system.so"
+      name="ignition::gazebo::systems::JointStatePublisher" />
+  </gazebo>
+
+  <!-- IMU -->
+  <!-- <gazebo>
+    <plugin filename="libignition-gazebo-imu-system.so"
+      name="ignition::gazebo::systems::Imu" />
+  </gazebo> -->
+
+  <!-- SENSORS for lidar and camera -->
+  <gazebo>
+    <plugin
+      filename="libignition-gazebo-sensors-system.so"
+      name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre</render_engine>
+    </plugin>
+  </gazebo>
+
+</robot>

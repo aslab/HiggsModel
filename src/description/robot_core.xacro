@@ -2,21 +2,6 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
-<!--Se define el color de los materiales utilizados.-->
-
-  <material name="red">
-    <color rgba="0.851 0.0 0.0 1.0"/>
-  </material>
-  <material name="black">
-    <color rgba="0.038 0.038 0.038 1.0"/>
-  </material>
-  <material name="yellow">
-    <color rgba="0.715 0.583 0.210 1.0"/>
-  </material>
-    <material name="white">
-    <color rgba="1.0 1.0 1.0 1.0"/>
-  </material>
-
 
 <!-- Chasis -->
 
@@ -125,7 +110,8 @@
 
     <collision>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.dae"/>
+        <!-- <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.dae"/> -->
+        <sphere radius="0.01"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision> 
@@ -181,12 +167,18 @@
   </joint>
 
 
-<!--Ruedas y ejes--> 
+<!-- =================================================================================== -->
+<!-- |                                          WHEELS AND JOINTS                      | -->
+<!-- =================================================================================== -->
+
+<!-- =================================================================================== -->
+<!-- |                                          RUEDA IZQ DEL                          | -->
+<!-- =================================================================================== -->
 <link name="Eje_izq_delantero_link">
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -217,7 +209,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -246,13 +238,6 @@
     <child link="Rueda_izq_delantera_link"/>
   </joint>
 
-<gazebo reference="Rueda_izq_delantera_link">
-      <!-- <mu1 value="200.0"/>
-      <mu2 value="100.0"/>
-      <kp value="10000000.0" />
-      <kd value="1.0" /> -->
-      <material>Gazebo/Grey</material>
-    </gazebo>
 
 <!-- <transmission name="rueda_izq_delantera">
     <type>transmission_interface/SimpleTransmission</type>
@@ -264,11 +249,15 @@
     </joint>
   </transmission> -->
 
+<!-- =================================================================================== -->
+<!-- |                                          RUEDA DER DEL                          | -->
+<!-- =================================================================================== -->
+
 <link name="Eje_der_delantero_link">
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -327,13 +316,6 @@
     <child link="Rueda_der_delantera_link"/>
   </joint>
 
-<gazebo reference="Rueda_der_delantera_link">
-      <!-- <mu1 value="200.0"/>
-      <mu2 value="100.0"/>
-      <kp value="10000000.0" />
-      <kd value="1.0" /> -->
-      <material>Gazebo/Grey</material>
-    </gazebo>
 
 <!-- <transmission name="rueda_der_delantera">
     <type>transmission_interface/SimpleTransmission</type>
@@ -345,11 +327,15 @@
     </joint>
   </transmission> -->
 
+<!-- =================================================================================== -->
+<!-- |                                          RUEDA IZQ TRA                          | -->
+<!-- =================================================================================== -->
+
 <link name="Eje_izq_trasero_link">
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -408,13 +394,6 @@
     <child link="Rueda_izq_trasera_link"/>
   </joint>
 
-<gazebo reference="Rueda_izq_trasera_link">
-      <!-- <mu1 value="200.0"/>  
-      <mu2 value="100.0"/>   
-      <kp value="10000000.0" />
-      <kd value="1.0" /> -->
-      <material>Gazebo/Grey</material>
-    </gazebo>
 
 <!-- <transmission name="rueda_izq_trasera">
     <type>transmission_interface/SimpleTransmission</type>
@@ -426,12 +405,16 @@
     </joint>
   </transmission> -->
 
+<!-- =================================================================================== -->
+<!-- |                                          RUEDA DER TRA                          | -->
+<!-- =================================================================================== -->
+
 
 <link name="Eje_der_trasero_link">
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-         <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -490,14 +473,6 @@
     <child link="Rueda_der_trasera_link"/>
   </joint>
 
-<gazebo reference="Rueda_der_trasera_link">
-      <!-- <mu1 value="200.0"/>  
-      <mu2 value="100.0"/> 
-      <kp value="10000000.0" />
-      <kd value="1.0" /> -->
-      <material>Gazebo/Grey</material>
-    </gazebo>
-
 <!-- <transmission name="rueda_der_trasera">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="rueda_der_tra_motor">
@@ -508,35 +483,131 @@
     </joint>
   </transmission> -->
 
+<!-- =================================================================================== -->
+<!-- |                                          GAZEBO                                 | -->
+<!-- =================================================================================== -->
+
 
 
 <gazebo reference="base_link">
-      <material>Gazebo/Red</material>
+      <!-- <material>Gazebo/Red</material> -->
+      <visual>
+            <material>
+                <ambient>1 0 0 1</ambient>
+                <diffuse>1 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1</specular>
+            </material>
+      </visual>
 </gazebo>
 
 <gazebo reference="cubierta_link">
-      <material>Gazebo/Black</material>
+      <!-- <material>Gazebo/Grey</material> -->
+      <visual>
+            <material>
+                <ambient>.3 .3 .3  1.0</ambient>
+                <diffuse>.7 .7 .7  1.0</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+            </material>
+        </visual>
 </gazebo>
 
 <gazebo reference="Sonar_delantero_link">
-      <material>Gazebo/Yellow</material>
+      <!-- <material>Gazebo/yellow</material> -->
 </gazebo>
 
 <gazebo reference="Sonar_trasero_link">
-      <material>Gazebo/Yellow</material>
+      <!-- <material>Gazebo/yellow</material> -->
+      <visual>
+            <material>
+                <ambient>0 0 0 1</ambient>
+                <diffuse>0 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1 5.0</specular>
+            </material>
+        </visual>
 </gazebo>
 <gazebo reference="Eje_izq_delantero_link">
-      <material>Gazebo/Black</material>
+      <!-- <material>Gazebo/black</material> -->
+      <visual>
+            <material>
+                <ambient>0 0 0 1</ambient>
+                <diffuse>0 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1 5.0</specular>
+            </material>
+        </visual>
 </gazebo>
 <gazebo reference="Eje_der_delantero_link">
-      <material>Gazebo/Black</material>
+      <!-- <material>Gazebo/black</material> -->
+      <visual>
+            <material>
+                <ambient>0 0 0 1</ambient>
+                <diffuse>0 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1 5.0</specular>
+            </material>
+        </visual>
 </gazebo>
 <gazebo reference="Eje_izq_trasero_link">
-      <material>Gazebo/Black</material>
+      <!-- <material>Gazebo/black</material> -->
+      <visual>
+            <material>
+                <ambient>0 0 0 1</ambient>
+                <diffuse>0 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1 5.0</specular>
+            </material>
+        </visual>
 </gazebo>
 <gazebo reference="Eje_der_trasero_link">
-      <material>Gazebo/Black</material>
+      <!-- <material>Gazebo/black</material> -->
+      <visual>
+            <material>
+                <ambient>0 0 0 1</ambient>
+                <diffuse>0 0 0 1</diffuse>
+                <specular>0.1 0.1 0.1 1 5.0</specular>
+            </material>
+        </visual>
 </gazebo>
-
+<gazebo reference="Rueda_izq_delantera_link">
+      <!-- <material>Gazebo/grey</material> -->
+      <visual>
+            <material>
+                <ambient>.3 .3 .3  1.0</ambient>
+                <diffuse>.7 .7 .7  1.0</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+            </material>
+        </visual>
+</gazebo>
+<gazebo reference="Rueda_der_delantera_link">
+      <!-- <material>Gazebo/grey</material> -->
+      <visual>
+            <material>
+                <ambient>.3 .3 .3  1.0</ambient>
+                <diffuse>.7 .7 .7  1.0</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+            </material>
+        </visual>
+</gazebo>
+<gazebo reference="Rueda_izq_trasera_link">
+      <!-- <material>Gazebo/grey</material> -->
+      <visual>
+            <material>
+                <ambient>.3 .3 .3  1.0</ambient>
+                <diffuse>.7 .7 .7  1.0</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+            </material>
+        </visual>
+</gazebo>
+<gazebo reference="Rueda_der_trasera_link">
+      <!-- <mu1 value="200.0"/>  
+      <mu2 value="100.0"/> 
+      <kp value="10000000.0" />
+      <kd value="1.0" /> -->
+      <!-- <material>Gazebo/grey</material> -->
+      <visual>
+            <material>
+                <ambient>.3 .3 .3  1.0</ambient>
+                <diffuse>.7 .7 .7  1.0</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+            </material>
+        </visual>
+</gazebo>
 
 </robot>

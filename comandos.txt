@@ -2,7 +2,7 @@
 
 --Launch gazebo with papeleras.world
 
-ros2 launch higgs2 launch_sim.launch.py world:=./higgs2/worlds/laberinto.world 
+ ros2 launch higgs2 launch_sim.launch.py  
 
 --Launch rviz2 (might be on the above)
 

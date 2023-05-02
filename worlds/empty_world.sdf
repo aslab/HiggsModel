@@ -1,0 +1,130 @@
+<sdf version="1.7">
+  <world name="demo">
+
+  <physics name="1ms" type="ignored">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin filename="libignition-gazebo-physics-system.so" name="ignition::gazebo::systems::Physics">
+        </plugin>
+        <plugin filename="libignition-gazebo-user-commands-system.so" name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin filename="libignition-gazebo-scene-broadcaster-system.so" name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+        <gui fullscreen="0">
+            <!-- 3D scene -->
+            <plugin filename="GzScene3D" name="3D View">
+                <ignition-gui>
+                    <title>3D View</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="string" key="state">docked</property>
+                </ignition-gui>
+
+                <engine>ogre</engine>
+                <scene>scene</scene>
+                <!-- <ambient_light>0.4 0.4 0.4</ambient_light> -->
+                <background_color>0.8 0.8 0.8</background_color>
+            </plugin>
+            <plugin filename="WorldControl" name="World control">
+                <ignition-gui>
+                    <title>World control</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="bool" key="resizable">false</property>
+                    <property type="double" key="height">72</property>
+                    <property type="double" key="width">121</property>
+                    <property type="double" key="z">1</property>
+
+                    <property type="string" key="state">floating</property>
+                    <anchors target="3D View">
+                        <line own="left" target="left"/>
+                        <line own="bottom" target="bottom"/>
+                    </anchors>
+                </ignition-gui>
+
+                <play_pause>true</play_pause>
+                <step>true</step>
+                <start_paused>true</start_paused>
+                <service>/world/world_demo/control</service>
+                <stats_topic>/world/world_demo/stats</stats_topic>
+            </plugin>
+            <plugin filename="WorldStats" name="World stats">
+                <ignition-gui>
+                    <title>World stats</title>
+                    <property type="bool" key="showTitleBar">false</property>
+                    <property type="bool" key="resizable">false</property>
+                    <property type="double" key="height">110</property>
+                    <property type="double" key="width">290</property>
+                    <property type="double" key="z">1</property>
+
+                    <property type="string" key="state">floating</property>
+                    <anchors target="3D View">
+                        <line own="right" target="right"/>
+                        <line own="bottom" target="bottom"/>
+                    </anchors>
+                </ignition-gui>
+
+                <sim_time>true</sim_time>
+                <real_time>true</real_time>
+                <real_time_factor>true</real_time_factor>
+                <iterations>true</iterations>
+                <topic>/world/world_demo/stats</topic>
+            </plugin>
+            <plugin filename="EntityTree" name="Entity tree">
+            </plugin>
+        </gui>
+    
+    <include>
+      <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Sun</uri>
+    </include>
+    
+    <include>
+      <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Ground Plane</uri>
+    </include>
+    <model name="Radio">
+      <pose>3 -1.5 0 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Radio/4/files/meshes/Radio.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Radio/4/files/meshes/Radio.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <actor name="actor_talking">
+      <skin>
+        <filename>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/actor - relative paths/tip/files/meshes/talk_b.dae</filename>
+        <scale>1.0</scale>
+      </skin>
+      <animation name="talk_b">
+        <filename>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/actor - relative paths/tip/files/meshes/talk_b.dae</filename>
+        <scale>1.0</scale>
+      </animation>
+      <script>
+        <loop>true</loop>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="talk_b">
+          <waypoint>
+            <time>0</time>
+            <pose>2 -2 0.5 0 0 0</pose>
+          </waypoint>
+          <waypoint>
+            <time>5</time>
+            <pose>2 -2 0.5 0 0 0</pose>
+          </waypoint>
+        </trajectory>
+      </script>
+    </actor>
+  </world>
+</sdf>
