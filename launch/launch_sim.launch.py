@@ -32,7 +32,7 @@ def generate_launch_description():
          parameters=[{'use_sim_time': use_sim_time}],
         arguments=[
             '-d',
-            os.path.join(pkg, 'rviz', 'robot_visualization.rviz')
+            os.path.join(pkg, 'config', 'view_bot.rviz')
         ]
     )
   
@@ -42,7 +42,7 @@ def generate_launch_description():
                     '-name', 'higgs2_sim',
                     '-z', '0', #-0.11
                     '-y', '0', #-0.32
-                    '-x', '2.8', #2.8
+                    '-x', '0', #2.8
                     '-topic', '/robot_description'],
                  output='screen')
 
@@ -62,5 +62,5 @@ def generate_launch_description():
         spawn,
         ign_bridge,
         state_publisher,
-        #rviz,
+        rviz,
     ])

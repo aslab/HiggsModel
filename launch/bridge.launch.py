@@ -173,7 +173,7 @@ def generate_launch_description():
                      arguments=[
                          '0', '0', '0', '0', '0', '0', '1',
                          'hokuyo_link',
-                         'higgs2_sim/base_link0/base_link/head_hokuyo_sensor'
+                         'higgs2_sim/base_link/head_hokuyo_sensor'
                      ])
 
     camera_stf = Node(package='tf2_ros', executable='static_transform_publisher',

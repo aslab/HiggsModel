@@ -175,7 +175,7 @@
 <!-- |                                          RUEDA IZQ DEL                          | -->
 <!-- =================================================================================== -->
 <link name="Eje_izq_delantero_link">
-      <visual>
+    <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
@@ -206,7 +206,7 @@
 
 
 <link name="Rueda_izq_delantera_link">
-      <visual>
+    <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
@@ -230,9 +230,9 @@
   </link>
 
 <joint name="base_ruedaizqdel_joint" type="continuous">
-    <axis xyz="0 1 0"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
     <!--<limit effort="80" velocity="0.268"/>-->
-    <joint_properties damping="0.7"/>
+    <!-- <joint_properties damping="0.7"/> -->
     <origin rpy="0 0 0" xyz="0 0.041 0"/>
     <parent link="Eje_izq_delantero_link"/>
     <child link="Rueda_izq_delantera_link"/>
@@ -284,7 +284,7 @@
   </joint>
 
 <link name="Rueda_der_delantera_link">
-      <visual>
+    <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
@@ -434,7 +434,7 @@
 
   </link>
    
-   <joint name="base_eje_der_trasero_joint" type="fixed">
+<joint name="base_eje_der_trasero_joint" type="fixed">
     <origin rpy="0 0 0" xyz="-0.135 -0.156 0.111"/>
     <parent link="base_link"/>
     <child link="Eje_der_trasero_link"/>
@@ -569,8 +569,8 @@
       <!-- <material>Gazebo/grey</material> -->
       <visual>
             <material>
-                <ambient>.3 .3 .3  1.0</ambient>
-                <diffuse>.7 .7 .7  1.0</diffuse>
+                <ambient>0.3 0.3 0.3 1.0</ambient>
+                <diffuse>0.7 0.7 0.7 1.0</diffuse>
                 <specular>0.01 0.01 0.01 1.0 1.5</specular>
             </material>
         </visual>
