@@ -42,7 +42,7 @@ def generate_launch_description():
                     '-name', 'higgs2_sim',
                     '-z', '0', #-0.11
                     '-y', '0', #-0.32
-                    '-x', '0', #2.8
+                    '-x', '2.8', #2.8
                     '-topic', '/robot_description'],
                  output='screen')
 
@@ -53,14 +53,33 @@ def generate_launch_description():
 		    os.path.join(pkg, 'launch', 'bridge.launch.py'),),
         )
     
+    # Joystick
+
+    joystick = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    pkg,'launch','joystick.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    twist_mux_params = os.path.join(pkg,'config','twist_mux.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params, {'use_sim_time': True}],
+            remappings=[('/cmd_vel_out','/cmd_vel')]
+        )
+    
     
     return LaunchDescription([
        DeclareLaunchArgument(
            'ign_args',
              default_value=['-r ' + os.path.join(pkg, 'worlds', 'cave_world.sdf')]),
+        joystick,
+        twist_mux,
         ign_gazebo,
         spawn,
         ign_bridge,
         state_publisher,
         rviz,
+        
     ])

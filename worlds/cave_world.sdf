@@ -20,7 +20,7 @@
                     <property type="string" key="state">docked</property>
                 </ignition-gui>
 
-                <engine>ogre</engine>
+                <engine>ogre2</engine>
                 <scene>scene</scene>
                 <ambient_light>0.4 0.4 0.4</ambient_light>
                 <background_color>0.8 0.8 0.8</background_color>
@@ -112,7 +112,7 @@
         </model>
         
             <include>
-                <pose>6.0 0 -0.5 0 0 -1.4</pose>
+                <pose>6.0 0 0 0 0 0</pose>
                 <uri>
                     https://fuel.gazebosim.org/1.0/NGD1004/models/pallet_box_mobile
                 </uri>

@@ -15,7 +15,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     robot_name = 'higgs2_sim'
     ign_model_prefix = '/model/' + robot_name
-    world_name = 'empty_world'
+    world_name = 'world_demo'
     ign_world_prefix = '/world/' + world_name 
 
     # clock bridge

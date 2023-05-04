@@ -12,10 +12,10 @@
       <right_joint>base_ruedadertra_joint</right_joint>
       <wheel_separation>0.415</wheel_separation>
       <wheel_radius>0.1</wheel_radius>
-      <odom_publish_frequency>1000</odom_publish_frequency>
+      <odom_publish_frequency>50</odom_publish_frequency>
       <topic>/cmd_vel</topic>
       <frame_id>odom</frame_id>
-      <child_frame_id>base_link0</child_frame_id>
+      <child_frame_id>base_link</child_frame_id>
     </plugin>
   </gazebo>
 
@@ -36,7 +36,7 @@
     <plugin
       filename="libignition-gazebo-sensors-system.so"
       name="ignition::gazebo::systems::Sensors">
-      <render_engine>ogre</render_engine>
+      <render_engine>ogre2</render_engine>
     </plugin>
   </gazebo>
 

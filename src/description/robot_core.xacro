@@ -3,16 +3,28 @@
 
 
 
-<!-- Chasis -->
+<!-- =================================================================================== -->
+<!-- |                                          DUMY LINK                              | -->
+<!-- =================================================================================== -->
 
-<link name="base_link0">
+<!-- <link name="base_link0">
 
- </link>
+ </link> -->
 
-<!-- Base footprint -->
+ <!-- Parent with no inertia -->
+
+ <!-- <joint name="chassis_joint" type="fixed">
+        <parent link="base_link0"/>
+        <child link="base_link"/>
+        <origin xyz="-0.1 0 0"/>
+    </joint> -->
+
+<!-- =================================================================================== -->
+<!-- |                                          BASE FOOTPRINT                         | -->
+<!-- =================================================================================== -->
 
 <joint name="base_footprint_joint" type="fixed">
-        <parent link="base_link0"/>
+        <parent link="base_link"/>
         <child link="base_footprint"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
@@ -21,20 +33,16 @@
 
 </link>
 
+<!-- =================================================================================== -->
+<!-- |                                          CHASIS                                 | -->
+<!-- =================================================================================== -->
 
-<!-- Parent with no inertia -->
-
- <joint name="chassis_joint" type="fixed">
-        <parent link="base_link0"/>
-        <child link="base_link"/>
-        <origin xyz="-0.1 0 0"/>
-    </joint>
 
 <link name="base_link">
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/chasis.dae"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/chasis.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.177"/>
       <material name="red"/>
@@ -58,13 +66,15 @@
  </link>
 
 
-<!-- Cubierta superior -->
+<!-- =================================================================================== -->
+<!-- |                                          CUBIERTA SUPERIOR                      | -->
+<!-- =================================================================================== -->
 
 <link name="cubierta_link">
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/cubierta.dae"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/cubierta.stl"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
       </geometry>
       
@@ -96,13 +106,15 @@
   </joint>
 
 
-<!--Sonar sensor: --> 
+<!-- =================================================================================== -->
+<!-- |                                          SONAR SENSORS                          | -->
+<!-- =================================================================================== -->
 
 <link name="Sonar_delantero_link">
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.dae"/>
+        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow"/>
@@ -110,7 +122,7 @@
 
     <collision>
       <geometry>
-        <!-- <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.dae"/> -->
+        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.stl"/>
         <sphere radius="0.01"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -482,6 +494,7 @@
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission> -->
+  
 
 <!-- =================================================================================== -->
 <!-- |                                          GAZEBO                                 | -->
@@ -501,27 +514,34 @@
 </gazebo>
 
 <gazebo reference="cubierta_link">
-      <!-- <material>Gazebo/Grey</material> -->
-      <visual>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+        <visual>
             <material>
-                <ambient>.3 .3 .3  1.0</ambient>
-                <diffuse>.7 .7 .7  1.0</diffuse>
-                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+                <ambient>0.1 0.1 0.1</ambient>
+                <diffuse>0.1 0.1 0.1</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.0</specular>
             </material>
         </visual>
 </gazebo>
 
 <gazebo reference="Sonar_delantero_link">
-      <!-- <material>Gazebo/yellow</material> -->
+      <!-- <material>Gazebo/DarkYellow</material> -->
+      <visual>
+            <material>
+                <ambient>0.7 0.7 0 1</ambient>
+                <diffuse>0.7 0.7 0 1</diffuse>
+                <specular>0 0 0 0 0</specular>
+            </material>
+        </visual>
 </gazebo>
 
 <gazebo reference="Sonar_trasero_link">
-      <!-- <material>Gazebo/yellow</material> -->
+      <!-- <material>Gazebo/DarkYellow</material> -->
       <visual>
             <material>
-                <ambient>0 0 0 1</ambient>
-                <diffuse>0 0 0 1</diffuse>
-                <specular>0.1 0.1 0.1 1 5.0</specular>
+                <ambient>0.7 0.7 0 1</ambient>
+                <diffuse>0.7 0.7 0 1</diffuse>
+                <specular>0 0 0 0 0</specular>
             </material>
         </visual>
 </gazebo>
@@ -566,32 +586,32 @@
         </visual>
 </gazebo>
 <gazebo reference="Rueda_izq_delantera_link">
-      <!-- <material>Gazebo/grey</material> -->
-      <visual>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+        <visual>
             <material>
-                <ambient>0.3 0.3 0.3 1.0</ambient>
-                <diffuse>0.7 0.7 0.7 1.0</diffuse>
-                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+                <ambient>0.1 0.1 0.1</ambient>
+                <diffuse>0.1 0.1 0.1</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.0</specular>
             </material>
         </visual>
 </gazebo>
 <gazebo reference="Rueda_der_delantera_link">
-      <!-- <material>Gazebo/grey</material> -->
-      <visual>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+        <visual>
             <material>
-                <ambient>.3 .3 .3  1.0</ambient>
-                <diffuse>.7 .7 .7  1.0</diffuse>
-                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+                <ambient>0.1 0.1 0.1</ambient>
+                <diffuse>0.1 0.1 0.1</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.0</specular>
             </material>
         </visual>
 </gazebo>
 <gazebo reference="Rueda_izq_trasera_link">
-      <!-- <material>Gazebo/grey</material> -->
-      <visual>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+        <visual>
             <material>
-                <ambient>.3 .3 .3  1.0</ambient>
-                <diffuse>.7 .7 .7  1.0</diffuse>
-                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+                <ambient>0.1 0.1 0.1</ambient>
+                <diffuse>0.1 0.1 0.1</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.0</specular>
             </material>
         </visual>
 </gazebo>
@@ -600,12 +620,12 @@
       <mu2 value="100.0"/> 
       <kp value="10000000.0" />
       <kd value="1.0" /> -->
-      <!-- <material>Gazebo/grey</material> -->
-      <visual>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+        <visual>
             <material>
-                <ambient>.3 .3 .3  1.0</ambient>
-                <diffuse>.7 .7 .7  1.0</diffuse>
-                <specular>0.01 0.01 0.01 1.0 1.5</specular>
+                <ambient>0.1 0.1 0.1</ambient>
+                <diffuse>0.1 0.1 0.1</diffuse>
+                <specular>0.01 0.01 0.01 1.0 1.0</specular>
             </material>
         </visual>
 </gazebo>
