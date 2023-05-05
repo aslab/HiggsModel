@@ -2,9 +2,11 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessStart
 from launch_ros.descriptions import ParameterValue 
 from launch_ros.actions import Node
 use_sim_time = True
@@ -19,6 +21,7 @@ def generate_launch_description():
       os.path.join(pkg_ros_ign_gazebo, 'launch', 'ign_gazebo.launch.py')),
     )
 
+
     state_publisher = Node(
     package='robot_state_publisher',
     executable='robot_state_publisher',
@@ -32,9 +35,10 @@ def generate_launch_description():
          parameters=[{'use_sim_time': use_sim_time}],
         arguments=[
             '-d',
-            os.path.join(pkg, 'config', 'view_bot.rviz')
+            os.path.join(pkg, 'config', 'view_bot_nav2.rviz')
         ]
     )
+
   
     # Spawn
     spawn = Node(package='ros_ign_gazebo', executable='create',
@@ -68,6 +72,23 @@ def generate_launch_description():
             parameters=[twist_mux_params, {'use_sim_time': True}],
             remappings=[('/cmd_vel_out','/cmd_vel')]
         )
+
+    # Slamtoolbox
+        
+    slam = IncludeLaunchDescription(
+		PythonLaunchDescriptionSource(
+		    os.path.join(pkg, 'launch', 'online_async_launch.py'),),
+        )
+
+    # Nav2
+
+    nav2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    pkg,'launch','navigation_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    
     
     
     return LaunchDescription([
@@ -75,11 +96,13 @@ def generate_launch_description():
            'ign_args',
              default_value=['-r ' + os.path.join(pkg, 'worlds', 'cave_world.sdf')]),
         joystick,
-        twist_mux,
+        #twist_mux,
         ign_gazebo,
         spawn,
         ign_bridge,
         state_publisher,
         rviz,
+        slam,
+        nav2,
         
     ])
