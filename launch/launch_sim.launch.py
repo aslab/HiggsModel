@@ -14,7 +14,7 @@ use_sim_time = True
 def generate_launch_description():
     pkg_ros_ign_gazebo = get_package_share_directory('ros_ign_gazebo')
     pkg = get_package_share_directory('higgs2')
-    path_to_urdf = pkg+'/src/description/robot.urdf.xacro'
+    path_to_urdf = pkg+'/model/description/robot.urdf.xacro'
     
     ign_gazebo = IncludeLaunchDescription(
       PythonLaunchDescriptionSource(

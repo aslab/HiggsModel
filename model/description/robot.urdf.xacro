@@ -13,10 +13,10 @@
     <xacro:unless value="$(arg use_ros2_control)">
         <xacro:include filename="gazebo_control_skid.xacro" />
     </xacro:unless> -->
-    <xacro:include filename="$(find higgs2)/src/description/robot_core.xacro" />
-    <xacro:include filename="$(find higgs2)/src/description/robot.gazebo" />
-    <xacro:include filename="$(find higgs2)/src/description/lidar.xacro" />
-    <xacro:include filename="$(find higgs2)/src/description/camera.xacro" />
-    <xacro:include filename="$(find higgs2)/src/description/materials.xacro" />
+    <xacro:include filename="$(find higgs2)/model/description/robot_core.xacro" />
+    <xacro:include filename="$(find higgs2)/model/description/robot.gazebo" />
+    <xacro:include filename="$(find higgs2)/model/description/lidar.xacro" />
+    <xacro:include filename="$(find higgs2)/model/description/camera.xacro" />
+    <xacro:include filename="$(find higgs2)/model/description/materials.xacro" />
     
 </robot>

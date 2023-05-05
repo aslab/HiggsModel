@@ -6,7 +6,7 @@ Create workspace and clone this repo:
 
 ```
 source /opt/ros/foxy/setup.bash
-mkdir -p ~/rob_igni
+mkdir -p ~/rob_igni/src
 cd ~/rob_igni/src
 git clone https://github.com/aslab/HiggsModel.git higgs2 -b higgs2_foxy_igni
 cd ..

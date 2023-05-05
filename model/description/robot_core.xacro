@@ -42,7 +42,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/chasis.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/chasis.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.177"/>
       <material name="red"/>
@@ -74,7 +74,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/cubierta.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/cubierta.stl"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
       </geometry>
       
@@ -114,7 +114,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/sonar_delantero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow"/>
@@ -122,7 +122,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_delantero.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/sonar_delantero.stl"/>
         <sphere radius="0.01"/> <!-- <cylinder length="0.075" radius="0.111"/> -->
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -143,7 +143,7 @@
 
     <visual>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_trasero.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/sonar_trasero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow"/>
@@ -151,7 +151,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/sonar_trasero.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/sonar_trasero.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision> 
@@ -190,7 +190,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -198,7 +198,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -221,7 +221,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -269,7 +269,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -277,7 +277,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -299,7 +299,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -347,7 +347,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -355,7 +355,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -377,7 +377,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -426,7 +426,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
@@ -434,7 +434,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/eje.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/eje.stl"/>
       </geometry>
     </collision>
 
@@ -456,7 +456,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find higgs2)/src/meshes/rueda.stl"/>
+        <mesh filename="file://$(find higgs2)/model/meshes/rueda.stl"/>
       </geometry>
       <material name="black"/>
     </visual>
