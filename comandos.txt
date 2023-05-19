@@ -62,6 +62,9 @@ ros2 run rosapi rosapi_node
 ros2 run web_video_server web_video_server 
 
 
+//LIDAR REAL ROBOT CRASH
+From other ssh run: killall rplidar_composition
+
 
 
 

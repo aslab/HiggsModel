@@ -50,5 +50,20 @@ git clone git@github.com:AlvaroBarry/ros_arduino_bridge.git
 or
 git clone https://github.com/AlvaroBarry/ros_arduino_bridge.git
 
+////////////REAL CAMARA AND LIDAR(on jetson)
 
+sudo apt install ros-foxy-rplidar-ros
+run:
+ros2 run rplidar_ros rplidar_composition --ros-args -p 
+serial_port:=/dev/ttyUSB0 -p frame_id:=hokuyo_link -p angle_compensate:=true
+-p scan_mode:=Standard
+
+--For compresed image:
+sudo apt install ros-foxy-image-transport-plugins ros-foxy-rqt-image-view
+run:
+ros2 run rqt_image_view rqt_image_view
+
+--Camera
+groups
+sudo apt install v4l-utils ros-foxy-v4l2-camera
 

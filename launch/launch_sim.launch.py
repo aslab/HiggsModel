@@ -103,6 +103,6 @@ def generate_launch_description():
         state_publisher,
         rviz,
         slam,
-        nav2,
+        #nav2,
         
     ])
