@@ -55,15 +55,15 @@ def generate_launch_description():
     ign_bridge = IncludeLaunchDescription(
 		PythonLaunchDescriptionSource(
 		    os.path.join(pkg, 'launch', 'bridge.launch.py'),),
-        )
+    )
     
     # Joystick
 
     joystick = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    pkg,'launch','joystick.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
-    )
+                 PythonLaunchDescriptionSource([os.path.join(
+                     pkg,'launch','joystick.launch.py'
+                 )]), launch_arguments={'use_sim_time': 'true'}.items()
+     )
 
     twist_mux_params = os.path.join(pkg,'config','twist_mux.yaml')
     twist_mux = Node(
@@ -96,7 +96,7 @@ def generate_launch_description():
            'ign_args',
              default_value=['-r ' + os.path.join(pkg, 'worlds', 'cave_world.sdf')]),
         joystick,
-        #twist_mux,
+        twist_mux,
         ign_gazebo,
         spawn,
         ign_bridge,

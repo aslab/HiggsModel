@@ -52,6 +52,14 @@ ros2 launch higgs2 joystick.launch.py
 
 //ros2 launch higgs2 rsp.launch.py use_sim_time:=true
 
+//SERVER
+
+npm start (on ros-ui-react/example)
+ros2 launch higgs2 joystick.launch.py
+ros2 launch higgs2 launch_sim.launch.py 
+ros2 run rosbridge_server rosbridge_websocket
+ros2 run rosapi rosapi_node 
+ros2 run web_video_server web_video_server 
 
 
 

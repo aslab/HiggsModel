@@ -12,10 +12,10 @@ def generate_launch_description():
     joy_params = os.path.join(get_package_share_directory('higgs2'),'config','joystick.yaml')
 
     joy_node = Node(
-            package='joy',
-            executable='joy_node',
-            parameters=[joy_params, {'use_sim_time': use_sim_time}],
-         )
+             package='joy',
+             executable='joy_node',
+             parameters=[joy_params, {'use_sim_time': use_sim_time}],
+        )
 
     teleop_node = Node(
             package='teleop_twist_joy',
@@ -23,7 +23,7 @@ def generate_launch_description():
             name='teleop_node',
             # prefix = 'xterm -e',
             parameters=[joy_params, {'use_sim_time': use_sim_time}],
-            remappings=[('/cmd_vel','/cmd_vel_joy')]
+            remappings=[('/cmd_vel','/cmd_vel')]
             # remappings=[('/cmd_vel','/diff_cont/cmd_vel_unstamped')]
          )
 
