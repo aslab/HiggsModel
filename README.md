@@ -27,7 +27,7 @@ source install/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 ## Launch the real robot
-First make sure you clone the hardware interface, differential drive  and serial communication:
+First make sure you clone the hardware interface, differential drive, lidar and serial communication:
 ```
 cd ~/rob_igni/src
 git clone https://github.com/AlvaroBarry/ros_arduino_bridge.git
@@ -35,6 +35,9 @@ git clone https://github.com/AlvaroBarry/ros_arduino_bridge.git
 git clone https://github.com/joshnewans/serial
 
 git clone https://github.com/AlvaroBarry/diffdrive_arduino.git -b foxy
+
+git clone https://github.com/ros-drivers/urg_node.git
+
 cd ..
 colcon build --symlink-install
 source install/setup.bash
