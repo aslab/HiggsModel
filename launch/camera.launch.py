@@ -10,8 +10,8 @@ def generate_launch_description():
     return LaunchDescription([
 
         Node(
-            package='v4l2_camera',
-            executable='v4l2_camera_node',
+            package='realsense2_camera',
+            executable='realsense2_camera_node',
             output='screen',
             namespace='camera',
             parameters=[{

@@ -64,6 +64,8 @@ run:
 ros2 run rqt_image_view rqt_image_view
 
 --Camera
-groups
+sudo apt install ros-foxy-librealsense2*
+sudo apt install ros-foxy-realsense2-*
 sudo apt install v4l-utils ros-foxy-v4l2-camera
+
 
