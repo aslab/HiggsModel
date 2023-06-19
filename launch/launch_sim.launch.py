@@ -32,7 +32,7 @@ def generate_launch_description():
     rviz = Node(
         package='rviz2',
         executable='rviz2',
-         parameters=[{'use_sim_time': use_sim_time}],
+         parameters=[{'use_sim_time': 'true'}],
         arguments=[
             '-d',
             os.path.join(pkg, 'config', 'view_bot_nav2.rviz')
@@ -69,23 +69,31 @@ def generate_launch_description():
     twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
-            parameters=[twist_mux_params, {'use_sim_time': True}],
+            parameters=[twist_mux_params, {'use_sim_time': 'true'}],
             remappings=[('/cmd_vel_out','/cmd_vel')]
         )
 
-    # Slamtoolbox
+    # Slamtoolbox(default pose)
         
     slam = IncludeLaunchDescription(
 		PythonLaunchDescriptionSource(
 		    os.path.join(pkg, 'launch', 'online_async_launch.py'),),
         )
 
+    # AMCL Localization(choose pose)
+
+    amcl = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    pkg,'launch','localization_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
     # Nav2
 
     nav2 = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     pkg,'launch','navigation_launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'true', 'map_subscribe_transient_local': 'true'}.items()
     )
 
     
@@ -103,6 +111,7 @@ def generate_launch_description():
         state_publisher,
         rviz,
         slam,
+        #amcl,
         #nav2,
         
     ])

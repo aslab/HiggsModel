@@ -26,6 +26,19 @@ source install/setup.bash
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
+* For AMCL localization and choosing initial pose:
+
+```
+ros2 launch higgs2 localization_launch.py use_sim_time:=true
+
+```
+* For NAV2:
+
+```
+ros2 launch higgs2  navigation_launch.py use_sim_time:=true map_subscribe_transient_local:=true
+
+```
+
 ## Launch the real robot
 First make sure you clone the hardware interface, differential drive, lidar and serial communication:
 ```
@@ -53,4 +66,16 @@ source install/setup.bash
 
 ```
 sudo chmod 666 /dev/ttyACM0
+```
+* For AMCL localization and choosing initial pose:
+
+```
+ros2 launch higgs2 localization_launch.py use_sim_time:=false
+
+```
+* For NAV2:
+
+```
+ros2 launch higgs2  navigation_launch.py use_sim_time:=false map_subscribe_transient_local:=true
+
 ```

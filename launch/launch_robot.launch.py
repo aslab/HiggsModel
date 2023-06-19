@@ -98,6 +98,16 @@ def generate_launch_description():
         )
     )
 
+    rviz = Node(
+        package='rviz2',
+        executable='rviz2',
+         parameters=[{'use_sim_time': 'false'}],
+        arguments=[
+            '-d',
+            os.path.join(pkg, 'config', 'view_bot_nav2.rviz')
+        ]
+    )
+
 
     # Code for delaying a node (I haven't tested how effective it is)
     # 
@@ -121,9 +131,10 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         joystick,
-        #lidar,
-        #camera,
+        lidar,
+        camera,
         twist_mux,
+        rviz,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner
