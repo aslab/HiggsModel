@@ -26,12 +26,7 @@ source install/setup.bash
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
-* For AMCL localization and choosing initial pose:
 
-```
-ros2 launch higgs2 localization_launch.py use_sim_time:=true
-
-```
 * For NAV2:
 
 ```
