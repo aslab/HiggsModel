@@ -104,7 +104,7 @@ def generate_launch_description():
          parameters=[{'use_sim_time': 'false'}],
         arguments=[
             '-d',
-            os.path.join(pkg, 'config', 'view_bot_nav2.rviz')
+            os.path.join(package_name, 'config', 'view_bot_nav2.rviz')
         ]
     )
 
