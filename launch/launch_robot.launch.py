@@ -131,8 +131,8 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         joystick,
-        lidar,
-        camera,
+        #lidar,
+        #camera,
         twist_mux,
         rviz,
         delayed_controller_manager,
