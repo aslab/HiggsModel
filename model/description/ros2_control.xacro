@@ -12,7 +12,7 @@
                 <param name="right_wheel_t_name">base_ruedadertra_joint</param>
                 <param name="loop_rate">30</param>
                 <param name="device">/dev/ttyACM0</param>
-                <param name="baud_rate">115200</param>
+                <param name="baud_rate">9600</param>
                 <param name="timeout">1000</param>
                 <param name="enc_counts_per_rev">34000</param>
             </hardware>
