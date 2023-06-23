@@ -22,12 +22,17 @@ def generate_launch_description():
     )
 
 
-    state_publisher = Node(
-    package='robot_state_publisher',
-    executable='robot_state_publisher',
-    parameters=[{
-        'robot_description': ParameterValue(Command(['xacro ', str(path_to_urdf)]),
-                                       value_type=str)}])
+    # state_publisher = Node(
+    # package='robot_state_publisher',
+    # executable='robot_state_publisher',
+    # parameters=[{
+    #     'robot_description': ParameterValue(Command(['xacro ', str(path_to_urdf)]),
+    #                                    value_type=str)}])
+    rsp = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    pkg,'launch','rsp.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
+    )
 
     rviz = Node(
         package='rviz2',
@@ -103,15 +108,16 @@ def generate_launch_description():
        DeclareLaunchArgument(
            'ign_args',
              default_value=['-r ' + os.path.join(pkg, 'worlds', 'cave_world.sdf')]),
+        rsp,
         joystick,
         twist_mux,
         ign_gazebo,
         spawn,
         ign_bridge,
-        state_publisher,
+        #state_publisher,
         rviz,
         slam,
         #amcl,
-        #nav2,
+        nav2,
         
     ])

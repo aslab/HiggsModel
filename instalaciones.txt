@@ -8,6 +8,8 @@ sudo apt install ros-foxy-turtlesim
 sudo apt install python3-serial
 sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup '~ros-foxy-turtlebot3-.*'
 sudo apt install ros-foxy-slam-toolbox
+sudo apt-get install ros-foxy-pointcloud-to-laserscan
+
 
 /////NAV2 AND ROS2
 mkdir -p ~/nav2_ws/src
@@ -24,6 +26,10 @@ sudo apt install ros-foxy-turtlebot3*
 
 
 ////TWIST MUX FOR FOXY
+sudo apt install ros-foxy-twist-mux
+
+or
+
 git clone https://github.com/robofoundry/twist_mux_example.git
 cd twist_mux_example
 # run following commands from root of your workspace
