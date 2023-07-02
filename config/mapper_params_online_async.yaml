@@ -19,7 +19,7 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: ./higgs2/config/maps/laberinto_map_foxy
+    map_file_name: ./src/higgs2/config/maps/laberinto_map_foxy
     # map_start_pose: [0.0, 0.0, 0.0]
     map_start_at_dock: true
 

@@ -50,5 +50,7 @@ git clone git@github.com:AlvaroBarry/ros_arduino_bridge.git
 or
 git clone https://github.com/AlvaroBarry/ros_arduino_bridge.git
 
+///////BALL TRACKER
 
-
+sudo apt install python3-opencv
+git clone https://github.com/joshnewans/ball_tracker.git

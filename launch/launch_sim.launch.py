@@ -48,7 +48,8 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-                    launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
+                    launch_arguments={'world':'./src/higgs2/worlds/laberinto.world',
+                                     'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
              )
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
@@ -75,18 +76,28 @@ def generate_launch_description():
         arguments=["joint_broad"],
     )
 
-#    relay_odom = Node(
-#     name="relay_odom",
-#     package="topic_tools",
-#     executable="relay",
-#     parameters=[
-#         {
-#             "input_topic": "/diff_cont/odom",
-#             "output_topic": "/odom",
-#         }
-#     ],
-#     output="screen",
-#     )
+    # Slamtoolbox(default pose)
+        
+    slam = IncludeLaunchDescription(
+		PythonLaunchDescriptionSource(
+		    os.path.join(package_name, 'launch', 'online_async_launch.py'),),
+        )
+
+    # AMCL Localization(choose pose)
+
+    amcl = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_name,'launch','localization_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    # Nav2
+
+    nav2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_name,'launch','navigation_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true', 'map_subscribe_transient_local': 'true'}.items()
+    )
     
     
 
@@ -98,8 +109,11 @@ def generate_launch_description():
         twist_mux,
         gazebo,
         spawn_entity,
-        #relay_odom,
         diff_drive_spawner,
         joint_broad_spawner,
-        rviz2
+        rviz2,
+        #slam,
+        #amcl,
+        #nav2,
+
     ])
