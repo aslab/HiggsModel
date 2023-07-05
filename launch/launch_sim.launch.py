@@ -40,7 +40,7 @@ def generate_launch_description():
          parameters=[{'use_sim_time': 'true'}],
         arguments=[
             '-d',
-            os.path.join(pkg, 'config', 'view_bot_nav2.rviz')
+            os.path.join(pkg, 'config', 'view_bot_amcl.rviz')
         ]
     )
 
@@ -80,17 +80,22 @@ def generate_launch_description():
 
     # Slamtoolbox(default pose)
         
+    slam_params= os.path.join(pkg,'config','mapper_params_online_async.yaml')
+
     slam = IncludeLaunchDescription(
-		PythonLaunchDescriptionSource(
-		    os.path.join(pkg, 'launch', 'online_async_launch.py'),),
-        )
+                PythonLaunchDescriptionSource([os.path.join(
+                    pkg,'launch','online_async_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true', 'slam_params_file': slam_params}.items()
+    )
 
     # AMCL Localization(choose pose)
+
+    map_amcl = os.path.join(pkg,'config','maps','depot_map_save.yaml')
 
     amcl = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     pkg,'launch','localization_launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'true','map': map_amcl}.items()
     )
 
     # Nav2
@@ -118,6 +123,6 @@ def generate_launch_description():
         rviz,
         slam,
         #amcl,
-        nav2,
+        nav2
         
     ])

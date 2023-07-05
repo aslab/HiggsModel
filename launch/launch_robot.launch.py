@@ -104,8 +104,34 @@ def generate_launch_description():
          parameters=[{'use_sim_time': 'false'}],
         arguments=[
             '-d',
-            os.path.join(get_package_share_directory(package_name), 'config', 'view_bot_nav2.rviz')
+            os.path.join(get_package_share_directory(package_name), 'config', 'view_bot_amcl.rviz')
         ]
+    )
+
+    slam_params= os.path.join(get_package_share_directory(package_name),'config','mapper_params_online_async_robot.yaml')
+
+    slam = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','online_async_launch.py'
+                )]), launch_arguments={'use_sim_time': 'false', 'slam_params_file': slam_params}.items()
+    )
+
+    # AMCL Localization(choose pose)
+
+    map_amcl = os.path.join(get_package_share_directory(package_name),'config','maps','lab_save.yaml')
+
+    amcl = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','localization_launch.py'
+                )]), launch_arguments={'use_sim_time': 'false','map': map_amcl}.items()
+    )
+
+    # Nav2
+
+    nav2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','navigation_launch.py'
+                )]), launch_arguments={'use_sim_time': 'false', 'map_subscribe_transient_local': 'true'}.items()
     )
 
 
@@ -137,5 +163,8 @@ def generate_launch_description():
         rviz,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
-        delayed_joint_broad_spawner
+        delayed_joint_broad_spawner,
+        slam,
+        #amcl,
+        nav2,
     ])
