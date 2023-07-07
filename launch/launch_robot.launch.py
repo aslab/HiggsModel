@@ -134,6 +134,13 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'false', 'map_subscribe_transient_local': 'true'}.items()
     )
 
+    # Ball tracker
+
+    ball = IncludeLaunchDescription(
+		    PythonLaunchDescriptionSource(
+		        os.path.join(package_name, 'launch', 'ball_tracker.launch.py'),),
+    )
+
 
     # Code for delaying a node (I haven't tested how effective it is)
     # 
@@ -157,14 +164,15 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         joystick,
-        #lidar,
-        #camera,
+        lidar,
+        camera,
         twist_mux,
         rviz,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
-        slam,
-        #amcl,
-        nav2,
+        #slam,
+        amcl,
+        #nav2,
+        #ball,
     ])

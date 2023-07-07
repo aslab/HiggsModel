@@ -5,7 +5,7 @@
  <!-- |                                    CAMERA                                       | -->
  <!-- =================================================================================== -->
 
-    <link name="d_435_camera">
+    <link name="camera_link">
       <inertial>
         <mass value="0.001" />
         <inertia ixx="0.0000000001" ixy="0" ixz="0" iyy="0.0000000001" iyz="0"
@@ -28,8 +28,16 @@
     <joint name="joint_d_435_camera" type="fixed">
       <origin xyz="0.2 0 0.2" rpy="0 0 0" />
       <parent link="base_link" />
-      <child link="d_435_camera" />
+      <child link="camera_link" />
     </joint>
+
+    <joint name="camera_optical_joint" type="fixed">
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
+        <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    </joint>
+
+    <link name="camera_link_optical"></link>
 
 
   <!-- INCLUDE CAMERA-->
