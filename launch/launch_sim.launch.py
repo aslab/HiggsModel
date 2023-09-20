@@ -40,7 +40,7 @@ def generate_launch_description():
          parameters=[{'use_sim_time': 'true'}],
         arguments=[
             '-d',
-            os.path.join(pkg, 'config', 'view_bot_amcl.rviz')
+            os.path.join(pkg, 'config', 'view_sim_nav2.rviz')
         ]
     )
 

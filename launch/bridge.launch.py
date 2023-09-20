@@ -182,7 +182,7 @@ def generate_launch_description():
                       name='camera_stf',
                       arguments=[
                           '0', '0', '0', '0', '0', '0', '1',
-                              'd_435_camera',
+                              'camera_link',
                               'higgs2_sim/base_link/rgbd_camera'
                       ])
 
