@@ -25,7 +25,7 @@ def generate_launch_description():
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                     #<--- CHANGE CONTROL MODE BETWEEN ROS2 OR SKID use_ros2_control
-                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
 
     joystick = IncludeLaunchDescription(
@@ -78,16 +78,19 @@ def generate_launch_description():
 
     # Slamtoolbox(default pose)
         
+    slam_params= os.path.join(get_package_share_directory(package_name),'config','mapper_params_online_async.yaml')
+
     slam = IncludeLaunchDescription(
-		PythonLaunchDescriptionSource(
-		    os.path.join(package_name, 'launch', 'online_async_launch.py'),),
-        )
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','online_async_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true', 'slam_params_file': slam_params}.items()
+    )
 
     # AMCL Localization(choose pose)
 
     amcl = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
-                    package_name,'launch','localization_launch.py'
+                    get_package_share_directory(package_name),'launch','localization_launch.py'
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
 
@@ -95,8 +98,15 @@ def generate_launch_description():
 
     nav2 = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
-                    package_name,'launch','navigation_launch.py'
+                    get_package_share_directory(package_name),'launch','navigation_launch.py'
                 )]), launch_arguments={'use_sim_time': 'true', 'map_subscribe_transient_local': 'true'}.items()
+    )
+
+    # Ball tracker
+
+    ball = IncludeLaunchDescription(
+		    PythonLaunchDescriptionSource(
+		        os.path.join(get_package_share_directory(package_name), 'launch', 'ball_tracker.launch.py'),),
     )
     
     
@@ -109,11 +119,12 @@ def generate_launch_description():
         twist_mux,
         gazebo,
         spawn_entity,
-        diff_drive_spawner,
-        joint_broad_spawner,
+        #diff_drive_spawner,
+        #joint_broad_spawner,
         rviz2,
-        #slam,
+        slam,
         #amcl,
-        #nav2,
+        nav2,
+        #ball,
 
     ])
