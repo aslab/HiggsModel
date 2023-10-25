@@ -22,12 +22,6 @@ def generate_launch_description():
     )
 
 
-    # state_publisher = Node(
-    # package='robot_state_publisher',
-    # executable='robot_state_publisher',
-    # parameters=[{
-    #     'robot_description': ParameterValue(Command(['xacro ', str(path_to_urdf)]),
-    #                                    value_type=str)}])
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     pkg,'launch','rsp.launch.py'
@@ -119,7 +113,6 @@ def generate_launch_description():
         ign_gazebo,
         spawn,
         ign_bridge,
-        #state_publisher,
         rviz,
         slam,
         #amcl,
