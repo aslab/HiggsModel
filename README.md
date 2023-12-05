@@ -1,6 +1,10 @@
 # higgs2_simulation
 Simulation of UPM robot with Gazebo (Ignition) Citadel and ROS2 Foxy.
 
+![image](https://github.com/aslab/HiggsModel/assets/121524021/7b4a862d-0edf-4cdc-933a-f2afa433663e)
+![image](https://github.com/aslab/HiggsModel/assets/121524021/5d1d4360-8e4f-4c66-888d-d64c84a4d880)
+
+
 ## Install
 Create workspace and clone this repo:
 
