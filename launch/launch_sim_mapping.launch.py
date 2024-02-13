@@ -74,7 +74,7 @@ def generate_launch_description():
 
     # Slamtoolbox(default pose)
         
-    slam_params= os.path.join(pkg,'config','mapper_params_online_async.yaml')
+    slam_params= os.path.join(pkg,'config','mapper_params_online_async_mapping.yaml')
 
     slam = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -105,6 +105,7 @@ def generate_launch_description():
                     pkg, 'launch', 'ball_tracker.launch.py'
             )]), launch_arguments={'sim_mode': 'true'}.items()
     )
+    
     
     
     return LaunchDescription([

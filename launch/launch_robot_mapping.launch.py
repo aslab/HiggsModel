@@ -108,7 +108,7 @@ def generate_launch_description():
         ]
     )
 
-    slam_params= os.path.join(get_package_share_directory(package_name),'config','mapper_params_online_async_robot.yaml')
+    slam_params= os.path.join(get_package_share_directory(package_name),'config','mapper_params_online_async_robot_mapping.yaml')
 
     slam = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -172,8 +172,8 @@ def generate_launch_description():
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
-        #slam,
-        amcl,
+        slam,
+        #amcl,
         nav2,
         #ball,
     ])
